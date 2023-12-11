@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <View
         android:id="@+id/view3"
@@ -64,8 +64,7 @@
         app:itemTextAppearanceInactive="@style/TextAppearance.Material3.LabelSmall"
         app:itemTextAppearanceActiveBoldEnabled="false"
         app:labelVisibilityMode="labeled"
-        app:itemIconSize="20dp"
-        >
+        app:itemIconSize="20dp">
 
         <com.google.android.material.bottomappbar.BottomAppBar
             android:id="@+id/bottomAppBar"

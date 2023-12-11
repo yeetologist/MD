@@ -1,7 +1,8 @@
-package com.dicoding.parentpal
+package com.dicoding.parentpal.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.dicoding.parentpal.R
 
 class SigninActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

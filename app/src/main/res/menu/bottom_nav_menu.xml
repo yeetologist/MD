@@ -7,8 +7,7 @@
     <item
         android:id="@+id/bookmarkFragment"
         android:icon="@drawable/bookmark_selector"
-        android:title="@string/title_news"
-        />
+        android:title="@string/title_news" />
     <item
         android:id="@+id/none"
         android:title="" />
