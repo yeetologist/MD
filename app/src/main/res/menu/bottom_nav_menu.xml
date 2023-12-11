@@ -9,9 +9,6 @@
         android:icon="@drawable/bookmark_selector"
         android:title="@string/title_news" />
     <item
-        android:id="@+id/none"
-        android:title="" />
-    <item
         android:id="@+id/caFragment"
         android:icon="@drawable/history_selector"
         android:title="@string/title_calculator" />
