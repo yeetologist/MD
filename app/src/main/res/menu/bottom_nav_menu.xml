@@ -5,12 +5,12 @@
         android:icon="@drawable/home_selector"
         android:title="@string/title_home" />
     <item
-        android:id="@+id/bookmarkFragment"
+        android:id="@+id/newsFragment"
         android:icon="@drawable/bookmark_selector"
         android:title="@string/title_news" />
     <item
-        android:id="@+id/caFragment"
-        android:icon="@drawable/history_selector"
+        android:id="@+id/calculatorFragment"
+        android:icon="@drawable/calculate_selector"
         android:title="@string/title_calculator" />
     <item
         android:id="@+id/profileFragment"
