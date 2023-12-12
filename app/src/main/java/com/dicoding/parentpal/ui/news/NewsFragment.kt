@@ -1,5 +1,6 @@
 package com.dicoding.parentpal.ui.news
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,7 +8,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.dicoding.parentpal.data.local.paging.LoadingStateAdapter
 import com.dicoding.parentpal.data.local.paging.NewsListAdapter
+import com.dicoding.parentpal.data.remote.response.ArticlesItem
 import com.dicoding.parentpal.databinding.FragmentNewsBinding
 import com.dicoding.parentpal.ui.ViewModelFactory
 
@@ -15,6 +18,9 @@ class NewsFragment : Fragment() {
     private lateinit var binding: FragmentNewsBinding
     private val newsViewModel: NewsViewModel by viewModels {
         ViewModelFactory(requireContext())
+    }
+    private val courseAdapter: NewsListAdapter by lazy {
+        NewsListAdapter(::onNewsClick)
     }
 
     override fun onCreateView(
@@ -32,8 +38,14 @@ class NewsFragment : Fragment() {
         getData()
     }
 
+    private fun onNewsClick(articlesItem: ArticlesItem) {
+        val intent = Intent(requireContext(), DetailNewsActivity::class.java)
+        intent.putExtra(DetailNewsActivity.EXTRA_NEWS, articlesItem)
+        startActivity(intent)
+    }
+
     private fun getData() {
-        val adapter = NewsListAdapter()
+        val adapter = courseAdapter
         binding.rvListStories.adapter = adapter.withLoadStateFooter(
             footer = LoadingStateAdapter {
                 adapter.retry()

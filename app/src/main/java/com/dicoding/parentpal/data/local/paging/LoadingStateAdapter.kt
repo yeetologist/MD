@@ -1,4 +1,4 @@
-package com.dicoding.parentpal.ui.news
+package com.dicoding.parentpal.data.local.paging
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
