@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/newsFragment"
-        android:name="com.dicoding.parentpal.ui.NewsFragment"
+        android:name="com.dicoding.parentpal.ui.news.NewsFragment"
         android:label="fragment_news"
         tools:layout="@layout/fragment_news" />
     <fragment

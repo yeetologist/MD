@@ -7,8 +7,8 @@
     <group>
         <clip-path android:pathData="M15 1H244C251.732 1 258 7.26801 258 15V23.4761C258 31.2081 251.732 37.4761 244 37.4761H15C7.26801 37.4761 1 31.2081 1 23.4761V15C1 7.26801 7.26801 1 15 1Z" />
         <path
-            android:pathData="M1 1V37.4761H258V1"
-            android:fillColor="#FFFFFF" />
+            android:fillColor="#FFFFFF"
+            android:pathData="M1 1V37.4761H258V1" />
     </group>
     <group>
         <clip-path android:pathData="M0 0V38.4761H259V0M15 1H244C251.732 1 258 7.26801 258 15V23.4761C258 31.2081 251.732 37.4761 244 37.4761H15C7.26801 37.4761 1 31.2081 1 23.4761V15C1 7.26801 7.26801 1 15 1Z" />

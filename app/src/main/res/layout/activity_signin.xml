@@ -111,9 +111,9 @@
         android:layout_height="48dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="4dp"
-        app:startIconDrawable="@drawable/ic_baseline_email_24"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvEmail">
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail"
+        app:startIconDrawable="@drawable/ic_baseline_email_24">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/emailEditText"
@@ -143,9 +143,9 @@
         android:layout_height="52dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="4dp"
-        app:startIconDrawable="@drawable/ic_baseline_lock_24"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvPassword">
+        app:layout_constraintTop_toBottomOf="@+id/tvPassword"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"

@@ -1,10 +1,10 @@
 package com.dicoding.parentpal.ui
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.dicoding.parentpal.databinding.FragmentProfileBinding
 
 class ProfileFragment : Fragment() {
@@ -13,7 +13,7 @@ class ProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentProfileBinding.inflate(layoutInflater, container,false)
+        binding = FragmentProfileBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
 
