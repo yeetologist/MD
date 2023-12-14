@@ -24,7 +24,10 @@
     <string name="title_logout">Logout</string>
     <string name="title_terms_and_condition">Terms and Condition</string>
     <string name="title_setting_profile">Setting</string>
+    <string name="title_bookmark_profile">Bookmark</string>
+    <string name="title_history_profile">History</string>
     <string name="edit_image_description">Edit Image</string>
+    <string name="zero">0</string>
     <string name="btn_update">Save Changes</string>
     <string name="btn_imt_description">Hitung Indeks Masa Tubuh</string>
     <string name="btn_energy_description">Hitung Kebutuhan Energi</string>
