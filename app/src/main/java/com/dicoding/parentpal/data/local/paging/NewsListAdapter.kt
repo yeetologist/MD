@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.dicoding.parentpal.data.remote.response.ArticlesItem
 import com.dicoding.parentpal.databinding.ItemNewsBinding
+import com.dicoding.parentpal.util.loadImage
 
 class NewsListAdapter(private val onItemClickListener: (ArticlesItem) -> Unit) :
     PagingDataAdapter<ArticlesItem, NewsListAdapter.MyViewHolder>(DIFF_CALLBACK) {
@@ -33,6 +34,8 @@ class NewsListAdapter(private val onItemClickListener: (ArticlesItem) -> Unit) :
             itemView.setOnClickListener {
                 clickListener(data)
             }
+            data.urlToImage?.let { binding.ivItemNews.loadImage(it) }
+            binding.ivItemNews.contentDescription = data.title
         }
 
         fun getCourse(): ArticlesItem = news
