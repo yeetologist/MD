@@ -26,6 +26,10 @@
     <string name="title_setting_profile">Setting</string>
     <string name="edit_image_description">Edit Image</string>
     <string name="btn_update">Save Changes</string>
+    <string name="btn_imt_description">Hitung Indeks Masa Tubuh</string>
+    <string name="btn_energy_description">Hitung Kebutuhan Energi</string>
+    <string name="btn_bbi_description">Hitung Berat Badan Ideal</string>
+    <string name="btn_summary_description">Lihat Rangkuman Kalkulasi</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_settings">SettingsActivity</string>
