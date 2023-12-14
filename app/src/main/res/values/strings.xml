@@ -6,6 +6,7 @@
     <string name="title_welcome_page">Welcome</string>
     <string name="title_welcome_page1">ParentPal</string>
     <string name="email">Email</string>
+    <string name="email2">user@gmail.com</string>
     <string name="password">Password</string>
     <string name="inputEmail">masukkan email Anda</string>
     <string name="inputPassword">masukkan password Anda</string>
@@ -20,6 +21,11 @@
     <string name="title_profile">Profile</string>
     <string name="title_calculator">Calculator</string>
     <string name="retry">Coba Lagi</string>
+    <string name="title_logout">Logout</string>
+    <string name="title_terms_and_condition">Terms and Condition</string>
+    <string name="title_setting_profile">Setting</string>
+    <string name="edit_image_description">Edit Image</string>
+    <string name="btn_update">Save Changes</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_settings">SettingsActivity</string>
