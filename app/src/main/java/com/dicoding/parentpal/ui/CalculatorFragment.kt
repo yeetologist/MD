@@ -1,5 +1,6 @@
 package com.dicoding.parentpal.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -29,14 +30,21 @@ class CalculatorFragment : Fragment(), View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
-        when(v?.id){
+        when (v?.id) {
             R.id.btn_imt -> {
+                startActivity(Intent(requireContext(), FormActivity::class.java))
             }
+
             R.id.btn_energi -> {
+                startActivity(Intent(requireContext(), FormActivity::class.java))
             }
+
             R.id.btn_bbi -> {
+                startActivity(Intent(requireContext(), FormActivity::class.java))
             }
+
             R.id.btn_kesimpulan -> {
+                startActivity(Intent(requireContext(), FormActivity::class.java))
             }
         }
     }

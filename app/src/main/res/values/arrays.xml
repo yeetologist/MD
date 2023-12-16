@@ -10,6 +10,11 @@
         <item>reply_all</item>
     </string-array>
 
+    <string-array name="gender">
+        <item>@string/laki</item>
+        <item>@string/perempuan</item>
+    </string-array>
+
     <string-array name="dark_mode">
         <item>@string/dark_mode_auto</item>
         <item>@string/dark_mode_on</item>

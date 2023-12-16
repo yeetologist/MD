@@ -33,6 +33,18 @@
     <string name="btn_energy_description">Hitung Kebutuhan Energi</string>
     <string name="btn_bbi_description">Hitung Berat Badan Ideal</string>
     <string name="btn_summary_description">Lihat Rangkuman Kalkulasi</string>
+    <string name="height_label">Tinggi Badan (cm) *</string>
+    <string name="weight_label">Berat Badan (kg) *</string>
+    <string name="gender_label">Jenis Kelamin *</string>
+    <string name="age_label">Usia (tahun) *</string>
+    <string name="activity_factor_label">Faktor Aktivitas *</string>
+    <string name="hobby_checked">%s</string>
+    <string name="note_hint">Catatan bila ada....</string>
+    <string name="calculate">Hitung</string>
+    <string name="clear">Kosongkan</string>
+    <string name="laki">Laki-Laki</string>
+    <string name="perempuan">Perempuan</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_settings">SettingsActivity</string>
