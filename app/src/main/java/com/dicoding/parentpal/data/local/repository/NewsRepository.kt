@@ -1,4 +1,4 @@
-package com.dicoding.parentpal.data.local.paging
+package com.dicoding.parentpal.data.local.repository
 
 import androidx.lifecycle.LiveData
 import androidx.paging.ExperimentalPagingApi
@@ -6,7 +6,8 @@ import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import androidx.paging.liveData
-import com.dicoding.parentpal.data.local.database.NewsDatabase
+import com.dicoding.parentpal.data.local.database.news.NewsDatabase
+import com.dicoding.parentpal.data.local.paging.NewsRemoteMediator
 import com.dicoding.parentpal.data.remote.response.ArticlesItem
 import com.dicoding.parentpal.data.remote.retrofit.ApiService
 

@@ -1,9 +1,11 @@
-package com.dicoding.parentpal.data.local.database
+package com.dicoding.parentpal.data.local.database.news
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.dicoding.parentpal.data.local.database.remotekeys.RemoteKeys
+import com.dicoding.parentpal.data.local.database.remotekeys.RemoteKeysDao
 import com.dicoding.parentpal.data.remote.response.ArticlesItem
 
 @Database(

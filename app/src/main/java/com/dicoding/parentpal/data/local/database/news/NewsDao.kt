@@ -1,4 +1,4 @@
-package com.dicoding.parentpal.data.local.database
+package com.dicoding.parentpal.data.local.database.news
 
 import androidx.paging.PagingSource
 import androidx.room.Dao

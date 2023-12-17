@@ -22,7 +22,7 @@
         tools:layout="@layout/fragment_calculator" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.dicoding.parentpal.ui.ProfileFragment"
+        android:name="com.dicoding.parentpal.ui.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
 </navigation>

@@ -19,7 +19,7 @@ class NewsFragment : Fragment() {
     private val newsViewModel: NewsViewModel by viewModels {
         ViewModelFactory(requireContext())
     }
-    private val courseAdapter: NewsListAdapter by lazy {
+    private val newsAdapter: NewsListAdapter by lazy {
         NewsListAdapter(::onNewsClick)
     }
 
@@ -40,12 +40,12 @@ class NewsFragment : Fragment() {
 
     private fun onNewsClick(articlesItem: ArticlesItem) {
         val intent = Intent(requireContext(), DetailNewsActivity::class.java)
-        intent.putExtra(DetailNewsActivity.EXTRA_NEWS, articlesItem)
+        intent.putExtra(DetailNewsActivity.EXTRA_ARTICLE_NEWS, articlesItem)
         startActivity(intent)
     }
 
     private fun getData() {
-        val adapter = courseAdapter
+        val adapter = newsAdapter
         binding.rvListStories.adapter = adapter.withLoadStateFooter(
             footer = LoadingStateAdapter {
                 adapter.retry()

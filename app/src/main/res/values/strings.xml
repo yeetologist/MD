@@ -44,6 +44,7 @@
     <string name="clear">Kosongkan</string>
     <string name="laki">Laki-Laki</string>
     <string name="perempuan">Perempuan</string>
+    <string name="favorite">favorite</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

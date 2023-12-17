@@ -5,8 +5,8 @@ import androidx.paging.LoadType
 import androidx.paging.PagingState
 import androidx.paging.RemoteMediator
 import androidx.room.withTransaction
-import com.dicoding.parentpal.data.local.database.NewsDatabase
-import com.dicoding.parentpal.data.local.database.RemoteKeys
+import com.dicoding.parentpal.data.local.database.news.NewsDatabase
+import com.dicoding.parentpal.data.local.database.remotekeys.RemoteKeys
 import com.dicoding.parentpal.data.remote.response.ArticlesItem
 import com.dicoding.parentpal.data.remote.retrofit.ApiService
 

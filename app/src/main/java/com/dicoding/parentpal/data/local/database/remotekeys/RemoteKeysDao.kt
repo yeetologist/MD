@@ -1,4 +1,4 @@
-package com.dicoding.parentpal.data.local.database
+package com.dicoding.parentpal.data.local.database.remotekeys
 
 import androidx.room.Dao
 import androidx.room.Insert
