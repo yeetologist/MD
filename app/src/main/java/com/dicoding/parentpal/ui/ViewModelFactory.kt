@@ -15,16 +15,23 @@ class ViewModelFactory(private val context: Context) : ViewModelProvider.Factory
             modelClass.isAssignableFrom(NewsViewModel::class.java) -> {
                 NewsViewModel(
                     Injection.provideNewsRepository(context),
-                    Injection.provideBookmarkRepository(context)
+                    Injection.provideBookmarkRepository(context),
+                    Injection.provideHistoryRepository(context)
                 ) as T
             }
 
             modelClass.isAssignableFrom(BookmarkViewModel::class.java) -> {
-                BookmarkViewModel(Injection.provideBookmarkRepository(context)) as T
+                BookmarkViewModel(
+                    Injection.provideBookmarkRepository(context),
+                    Injection.provideHistoryRepository(context),
+                ) as T
             }
 
             modelClass.isAssignableFrom(ProfileViewModel::class.java) -> {
-                ProfileViewModel(Injection.provideBookmarkRepository(context)) as T
+                ProfileViewModel(
+                    Injection.provideBookmarkRepository(context),
+                    Injection.provideHistoryRepository(context)
+                ) as T
             }
 
 

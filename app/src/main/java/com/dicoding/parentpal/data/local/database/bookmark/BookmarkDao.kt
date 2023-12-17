@@ -22,6 +22,9 @@ interface BookmarkDao {
     @Query("SELECT * from favorite")
     fun getAllBookmarkNews(): LiveData<List<BookmarkEntity>>
 
+    @Query("SELECT * FROM favorite ORDER BY timestamp DESC")
+    fun getAllBookmarksSortedByTime(): LiveData<List<BookmarkEntity>>
+
     @Query("SELECT * from favorite WHERE url = :url")
     fun getUserBookmarkByUrl(url: String): LiveData<List<BookmarkEntity>>
 }

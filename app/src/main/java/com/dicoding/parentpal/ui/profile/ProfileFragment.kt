@@ -11,6 +11,7 @@ import com.dicoding.parentpal.R
 import com.dicoding.parentpal.databinding.FragmentProfileBinding
 import com.dicoding.parentpal.ui.ViewModelFactory
 import com.dicoding.parentpal.ui.bookmark.BookmarkActivity
+import com.dicoding.parentpal.ui.bookmark.HistoryActivity
 import com.dicoding.parentpal.ui.setting.SettingsActivity
 
 class ProfileFragment : Fragment(), View.OnClickListener {
@@ -43,8 +44,16 @@ class ProfileFragment : Fragment(), View.OnClickListener {
             binding.tvBookmark.text = it.size.toString()
         }
 
+        newsViewModel.getHistory().observe(viewLifecycleOwner) {
+            binding.tvHistory.text = it.size.toString()
+        }
+
         binding.tvBookmark.setOnClickListener {
             startActivity(Intent(requireContext(), BookmarkActivity::class.java))
+        }
+
+        binding.tvHistory.setOnClickListener {
+            startActivity(Intent(requireContext(), HistoryActivity::class.java))
         }
     }
 

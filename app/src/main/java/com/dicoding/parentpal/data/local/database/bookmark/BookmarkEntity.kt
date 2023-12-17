@@ -29,5 +29,9 @@ data class BookmarkEntity(
     val url: String,
 
     @field:ColumnInfo("content")
-    val content: String? = null
+    val content: String? = null,
+
+    @ColumnInfo(name = "timestamp")
+    val timestamp: Long = System.currentTimeMillis()
+
 ) : Parcelable

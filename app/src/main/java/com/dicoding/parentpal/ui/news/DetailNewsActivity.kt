@@ -82,17 +82,23 @@ class DetailNewsActivity : AppCompatActivity() {
                     ColorStateList.valueOf(Color.rgb(255, 255, 255))
             }
             setupFab(article)
+            setupHistory(article)
         }
 
+
+    }
+
+    private fun setupHistory(article: ArticlesItem) {
+        newsViewModel.insertHistory(article.toBookmarkEntity())
     }
 
     private fun setupFab(article: ArticlesItem) {
 
         binding.fabBookmark.setOnClickListener {
             if (!isBookmarked) {
-                newsViewModel.insert(article.toBookmarkEntity())
+                newsViewModel.insertBookmark(article.toBookmarkEntity())
             } else {
-                newsViewModel.delete(article.toBookmarkEntity())
+                newsViewModel.deleteBookmark(article.toBookmarkEntity())
             }
         }
     }
