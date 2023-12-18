@@ -36,8 +36,11 @@ class ProfileFragment : Fragment(), View.OnClickListener {
 
         binding.apply {
             btnSetting.setOnClickListener(this@ProfileFragment)
-            btnTerms.setOnClickListener(this@ProfileFragment)
             btnLogout.setOnClickListener(this@ProfileFragment)
+            btnBookmark.setOnClickListener(this@ProfileFragment)
+            btnHistory.setOnClickListener(this@ProfileFragment)
+            tvBookmark.setOnClickListener(this@ProfileFragment)
+            tvHistory.setOnClickListener(this@ProfileFragment)
         }
 
         newsViewModel.getAllBookmarks().observe(viewLifecycleOwner) {
@@ -47,14 +50,6 @@ class ProfileFragment : Fragment(), View.OnClickListener {
         newsViewModel.getHistory().observe(viewLifecycleOwner) {
             binding.tvHistory.text = it.size.toString()
         }
-
-        binding.tvBookmark.setOnClickListener {
-            startActivity(Intent(requireContext(), BookmarkActivity::class.java))
-        }
-
-        binding.tvHistory.setOnClickListener {
-            startActivity(Intent(requireContext(), HistoryActivity::class.java))
-        }
     }
 
     override fun onClick(v: View?) {
@@ -62,9 +57,14 @@ class ProfileFragment : Fragment(), View.OnClickListener {
             R.id.btn_setting -> {
                 startActivity(Intent(requireActivity(), SettingsActivity::class.java))
             }
-//            R.id.btn_terms -> {
-//                startActivity(Intent(requireActivity(),TermsActivity::class.java))
-//            }
+
+            R.id.btn_bookmark, R.id.tv_bookmark -> {
+                startActivity(Intent(requireContext(), BookmarkActivity::class.java))
+            }
+
+            R.id.btn_history, R.id.tv_history -> {
+                startActivity(Intent(requireContext(), HistoryActivity::class.java))
+            }
 //            R.id.btn_logout -> {
 //                viewModel.logout()
 //                startActivity(Intent(requireActivity(),LoginActivity::class.java))
