@@ -26,6 +26,7 @@
     <string name="title_setting_profile">Setting</string>
     <string name="title_bookmark_profile">Bookmark</string>
     <string name="title_history_profile">History</string>
+    <string name="title_selamatdatang_home">Selamat Datang</string>
     <string name="edit_image_description">Edit Image</string>
     <string name="zero">0</string>
     <string name="btn_update">Save Changes</string>
@@ -45,6 +46,95 @@
     <string name="laki">Laki-Laki</string>
     <string name="perempuan">Perempuan</string>
     <string name="favorite">favorite</string>
+    <string name="rekomendasi">Rekomendasi</string>
+
+    <!-- Caption -->
+    <string name="konsultasi_underweight">1. Konsultasikan dengan Dokter atau Ahli Gizi:\n
+        Sebelum melakukan perubahan signifikan dalam\n
+        pola makan anak, penting untuk berkonsultasi\n
+        dengan dokter atau ahli gizi. Mereka dapat\n
+        menentukan apakah ada masalah kesehatan yang\n
+        mendasar atau apakah kondisi tersebutkarena\n
+        faktor genetik atau pola makan yang tidak tepat.\n
+        \n
+        2. Peningkatan Asupan Kalori:\n
+        Pastikan anak mendapatkan cukup kalori dari\n
+        makanan sehari-hari. Pilih makanan yang kaya\n
+        nutrisi dan tinggi kalori seperti kacang-kacangan,\n
+        biji-bijian, daging,ikan, produk susu, dan buah-buahan.\n
+        \n
+        3. Pilih Makanan Nutrisi Tinggi:\n
+        Pilih makanan yang kaya akan nutrisi,\n
+        termasuk protein, lemak sehat,\n
+        karbohidrat kompleks, serat, vitamin</string>
+
+    <string name="konsultasi_overweight">1.Konsultasikan dengan Dokter atau Ahli Gizi:\n
+    sebelum melakukan perubahan signifikan\n
+    pada pola makan atau aktivitas fisik,\n
+    penting untuk berkonsultasi dengan\n
+    dokter atau ahli gizi untuk mendapatkan\n
+    nasihat yang sesuai dengan\n
+    kondisi kesehatan individu.\n
+        \n
+    2. Pola Makan Sehat:
+    Makanan Seimbang: Konsumsi makanan\n
+    yang seimbang dari semua kelompok\n
+    makanan termasuk sayuran, buah-buahan,\n
+    biji-bijian, protein tanpa lemak,\n
+    dan produk susu rendah lemak.\n
+        \n
+    3. Aktivitas Fisik:\n
+    Olahraga Teratur: Mulailah dengan\n
+    rutinitas olahraga ringan dan secara\n
+    perlahan tingkatkan intensitasnya.\n
+    Berjalan kaki, bersepeda, atau\n
+    berenang bisa menjadi pilihan.</string>
+
+    <string name="konsultasi_gizibaik">1.Konsumsi Makanan Sehat:\n
+    Sayuran dan Buah-buahan: Pastikan\n
+    untuk mengonsumsi berbagai jenis\n
+    sayuran dan buah-buahan, karena\n
+    mereka kaya akan serat, vitamin,\n
+    dan antioksidan yang baik\n
+    untuk kesehatan tubuh.\n
+        \n
+    2. Kontrol Porsi Makanan:\n
+    Ukuran Porsi: Perhatikan ukuran\n
+    porsi makanan Anda untuk\n
+    menghindari konsumsi berlebihan.\n
+    Frekuensi Makan: Cobalah untuk\n
+    makan dalam porsi kecil namun\n
+    sering, ini dapat membantu\n
+    menjaga kadar gula darah dan\n
+    metabolisme tetap stabil.\n
+        \n
+    3. Minuman yang Sehat:\n
+    Air Putih: Minumlah air putih\n
+    yang cukup sepanjang hari.\n
+    Air sangat penting untuk menjaga\n
+    hidrasi dan keseimbangan tubuh.\n
+    Batas Konsumsi Minuman Bersoda dan Gula:\n
+    Batasi konsumsi minuman bersoda\n
+    dan minuman yang mengandung\n
+    gula tambahan.</string>
+
+    <string name="konsultasi_stunting">1. Gizi yang Baik :\n
+    Asupan Nutrisi yang Seimbang: Pastikan anak\n
+    mendapatkan makanan yang kaya akan nutrisi,\n
+    termasuk protein, zat besi, kalsium, vitamin,\n
+    dan mineral lainnya.\n
+        \n
+    2. Perawatan Kesehatan:\n
+    Pantau Pertumbuhan: Penting untuk memantau pertumbuhan\n
+    anak secara teratur untuk mengidentifikasi jika ada\n
+    masalah pertumbuhan.\n
+        \n
+    3. Faktor Lingkungan dan Sosial:\n
+    Pendidikan Gizi bagi Orang Tua: Memberikan edukasi\n
+    kepada orang tua atau pengasuh tentang pentingnya\n
+    gizi yang baik dan cara memberikan makanan\n
+    yang sehat kepada anak-anak.</string>
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -74,5 +164,7 @@
     <string name="dark_mode_auto">Automatic</string>
     <string name="dark_mode_on">Dark mode</string>
     <string name="dark_mode_off">Light mode</string>
+
+
 
 </resources>
