@@ -51,10 +51,9 @@
         android:id="@+id/textInputLayout"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="32dp"
         app:layout_constraintEnd_toEndOf="@+id/tv_height"
-        app:layout_constraintStart_toStartOf="parent"
-
+        app:layout_constraintStart_toStartOf="@id/v_base"
         app:layout_constraintTop_toBottomOf="@+id/tv_height">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -69,7 +68,8 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="@+id/tv_weight"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/v_base"
         app:layout_constraintStart_toStartOf="@+id/tv_weight"
         app:layout_constraintTop_toBottomOf="@+id/tv_weight">
 
@@ -89,7 +89,6 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:paddingHorizontal="24dp"
-
         android:text="@string/age_label"
         app:layout_constraintStart_toStartOf="@+id/v_base"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
@@ -108,7 +107,8 @@
             android:id="@+id/edt_age"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/age_hint" />
+            android:hint="@string/age_hint"
+            android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -118,11 +118,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:paddingHorizontal="24dp"
-
-
         android:text="@string/gender_label"
         app:layout_constraintStart_toStartOf="@+id/v_base"
-
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
 
     <Spinner
@@ -132,10 +129,8 @@
         android:layout_marginHorizontal="32dp"
         android:layout_marginVertical="8dp"
         android:paddingVertical="16dp"
-
         app:layout_constraintEnd_toEndOf="@+id/v_base"
         app:layout_constraintStart_toStartOf="@+id/v_base"
-
         app:layout_constraintTop_toBottomOf="@+id/tv_gender" />
 
     <TextView
@@ -145,11 +140,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:paddingHorizontal="24dp"
-
-
         android:text="@string/activity_factor_label"
         app:layout_constraintStart_toStartOf="@+id/v_base"
-
         app:layout_constraintTop_toBottomOf="@+id/spn_gender" />
 
 
@@ -159,10 +151,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="16dp"
-
         app:layout_constraintEnd_toStartOf="@+id/btn_activity_factor"
         app:layout_constraintStart_toStartOf="@+id/v_base"
-
         app:layout_constraintTop_toBottomOf="@+id/tv_activity_factor">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -170,7 +160,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:focusable="false"
-            android:hint="@string/activity_factor_hint" />
+            android:hint="@string/activity_factor_hint"
+            android:maxLines="3" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -193,10 +184,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:paddingHorizontal="24dp"
-
         android:text="@string/note_label"
         app:layout_constraintStart_toStartOf="@+id/v_base"
-
         app:layout_constraintTop_toBottomOf="@+id/textInputLayou3" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -206,7 +195,6 @@
         android:layout_marginHorizontal="32dp"
         app:layout_constraintEnd_toEndOf="@+id/v_base"
         app:layout_constraintStart_toStartOf="@+id/v_base"
-
         app:layout_constraintTop_toBottomOf="@+id/tv_note">
 
         <com.google.android.material.textfield.TextInputEditText
