@@ -19,12 +19,12 @@ interface BookmarkDao {
     @Delete
     fun deleteNews(fav: BookmarkEntity)
 
-    @Query("SELECT * from favorite")
-    fun getAllBookmarkNews(): LiveData<List<BookmarkEntity>>
+    @Query("SELECT * from favorite WHERE email = :email")
+    fun getAllBookmarkNews(email: String): LiveData<List<BookmarkEntity>>
 
-    @Query("SELECT * FROM favorite ORDER BY timestamp DESC")
-    fun getAllBookmarksSortedByTime(): LiveData<List<BookmarkEntity>>
+    @Query("SELECT * FROM favorite WHERE email = :email ORDER BY timestamp DESC")
+    fun getAllBookmarksSortedByTime(email: String): LiveData<List<BookmarkEntity>>
 
-    @Query("SELECT * from favorite WHERE url = :url")
-    fun getUserBookmarkByUrl(url: String): LiveData<List<BookmarkEntity>>
+    @Query("SELECT * from favorite WHERE url = :url AND email = :email")
+    fun getUserBookmarkByUrl(url: String, email: String): LiveData<List<BookmarkEntity>>
 }

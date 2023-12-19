@@ -9,11 +9,11 @@ import java.util.concurrent.Executors
 class HistoryRepository(private val historyDatabase: HistoryDatabase) {
     private val executorService: ExecutorService = Executors.newSingleThreadExecutor()
 
-    fun getAllBookmark(): LiveData<List<BookmarkEntity>> =
-        historyDatabase.bookmarkDao().getAllBookmarkNews()
+    fun getAllBookmark(email: String): LiveData<List<BookmarkEntity>> =
+        historyDatabase.bookmarkDao().getAllBookmarkNews(email)
 
-    fun getAllBookmarksSortedByTime(): LiveData<List<BookmarkEntity>> =
-        historyDatabase.bookmarkDao().getAllBookmarkNews()
+    fun getAllBookmarksSortedByTime(email: String): LiveData<List<BookmarkEntity>> =
+        historyDatabase.bookmarkDao().getAllBookmarksSortedByTime(email)
 
     fun insert(bookmarkEntity: BookmarkEntity) {
         executorService.execute { historyDatabase.bookmarkDao().insertNews(bookmarkEntity) }
@@ -27,7 +27,7 @@ class HistoryRepository(private val historyDatabase: HistoryDatabase) {
         executorService.execute { historyDatabase.bookmarkDao().updateNews(bookmarkEntity) }
     }
 
-    fun getUserBookmarkByUrl(url: String): LiveData<List<BookmarkEntity>> =
-        historyDatabase.bookmarkDao().getUserBookmarkByUrl(url)
+    fun getUserBookmarkByUrl(url: String, email: String): LiveData<List<BookmarkEntity>> =
+        historyDatabase.bookmarkDao().getUserBookmarkByUrl(url, email)
 
 }

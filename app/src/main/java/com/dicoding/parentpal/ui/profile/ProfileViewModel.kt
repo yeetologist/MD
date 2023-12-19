@@ -10,9 +10,9 @@ class ProfileViewModel(
     private val bookmarkRepository: BookmarkRepository,
     private val historyRepository: HistoryRepository
 ) : ViewModel() {
-    fun getAllBookmarks(): LiveData<List<BookmarkEntity>> = bookmarkRepository.getAllBookmark()
+    fun getAllBookmarks(email: String): LiveData<List<BookmarkEntity>> = bookmarkRepository.getAllBookmark(email)
 
-    fun getHistory(): LiveData<List<BookmarkEntity>> =
-        historyRepository.getAllBookmarksSortedByTime()
+    fun getHistory(email: String): LiveData<List<BookmarkEntity>> =
+        historyRepository.getAllBookmarksSortedByTime(email)
 
 }

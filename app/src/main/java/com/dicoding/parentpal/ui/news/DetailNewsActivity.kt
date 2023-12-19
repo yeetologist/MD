@@ -14,6 +14,7 @@ import com.dicoding.parentpal.data.local.database.bookmark.BookmarkEntity
 import com.dicoding.parentpal.data.remote.response.ArticlesItem
 import com.dicoding.parentpal.databinding.ActivityDetailNewsBinding
 import com.dicoding.parentpal.ui.ViewModelFactory
+import com.dicoding.parentpal.util.PreferenceManager
 import com.dicoding.parentpal.util.toArticlesItem
 import com.dicoding.parentpal.util.toBookmarkEntity
 import com.google.android.material.snackbar.Snackbar
@@ -27,10 +28,14 @@ class DetailNewsActivity : AppCompatActivity() {
 
     private var isBookmarked = false
 
+    private lateinit var preferenceManager: PreferenceManager
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailNewsBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        preferenceManager = PreferenceManager(this)
 
         var article = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             intent.getParcelableExtra(EXTRA_ARTICLE_NEWS, ArticlesItem::class.java)
@@ -74,12 +79,14 @@ class DetailNewsActivity : AppCompatActivity() {
 
         if (article != null) {
             webView.loadUrl(article.url)
-            newsViewModel.getBookmarkByUrl(article.url).observe(this@DetailNewsActivity) { entity ->
-                isBookmarked = entity.isNotEmpty()
-                if (entity.isNotEmpty()) binding.fabBookmark.imageTintList =
-                    ColorStateList.valueOf(Color.rgb(255, 50, 50))
-                else binding.fabBookmark.imageTintList =
-                    ColorStateList.valueOf(Color.rgb(255, 255, 255))
+            preferenceManager.getPreferences()?.let {
+                newsViewModel.getBookmarkByUrl(article.url, it.email).observe(this@DetailNewsActivity) { entity ->
+                    isBookmarked = entity.isNotEmpty()
+                    if (entity.isNotEmpty()) binding.fabBookmark.imageTintList =
+                        ColorStateList.valueOf(Color.rgb(255, 50, 50))
+                    else binding.fabBookmark.imageTintList =
+                        ColorStateList.valueOf(Color.rgb(255, 255, 255))
+                }
             }
             setupFab(article)
             setupHistory(article)
@@ -89,16 +96,21 @@ class DetailNewsActivity : AppCompatActivity() {
     }
 
     private fun setupHistory(article: ArticlesItem) {
-        newsViewModel.insertHistory(article.toBookmarkEntity())
+        preferenceManager.getPreferences()
+            ?.let { article.toBookmarkEntity(it.email) }?.let { newsViewModel.insertHistory(it) }
     }
 
     private fun setupFab(article: ArticlesItem) {
 
         binding.fabBookmark.setOnClickListener {
             if (!isBookmarked) {
-                newsViewModel.insertBookmark(article.toBookmarkEntity())
+                preferenceManager.getPreferences()
+                    ?.let { it1 -> article.toBookmarkEntity(it1.email) }
+                    ?.let { it2 -> newsViewModel.insertBookmark(it2) }
             } else {
-                newsViewModel.deleteBookmark(article.toBookmarkEntity())
+                preferenceManager.getPreferences()
+                    ?.let { it1 -> article.toBookmarkEntity(it1.email) }
+                    ?.let { it2 -> newsViewModel.deleteBookmark(it2) }
             }
         }
     }

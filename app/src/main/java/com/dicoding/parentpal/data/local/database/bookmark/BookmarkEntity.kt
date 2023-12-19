@@ -31,6 +31,9 @@ data class BookmarkEntity(
     @field:ColumnInfo("content")
     val content: String? = null,
 
+    @ColumnInfo(name = "email")
+    val email: String,
+
     @ColumnInfo(name = "timestamp")
     val timestamp: Long = System.currentTimeMillis()
 

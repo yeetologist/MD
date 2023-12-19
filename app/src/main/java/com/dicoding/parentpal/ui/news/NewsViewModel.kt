@@ -39,7 +39,7 @@ class NewsViewModel(
         historyRepository.delete(favEntity)
     }
 
-    fun getBookmarkByUrl(url: String): LiveData<List<BookmarkEntity>> {
-        return bookmarkRepository.getUserBookmarkByUrl(url)
+    fun getBookmarkByUrl(url: String, email: String): LiveData<List<BookmarkEntity>> {
+        return bookmarkRepository.getUserBookmarkByUrl(url, email)
     }
 }

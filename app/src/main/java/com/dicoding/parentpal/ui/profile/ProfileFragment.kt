@@ -48,12 +48,14 @@ class ProfileFragment : Fragment(), View.OnClickListener {
             tvHistory.setOnClickListener(this@ProfileFragment)
         }
 
-        newsViewModel.getAllBookmarks().observe(viewLifecycleOwner) {
-            binding.tvBookmark.text = it.size.toString()
-        }
+        preferenceManager.getPreferences()?.let { pref ->
+            newsViewModel.getAllBookmarks(pref.email).observe(viewLifecycleOwner) {
+                binding.tvBookmark.text = it.size.toString()
+            }
+            newsViewModel.getHistory(pref.email).observe(viewLifecycleOwner) {
+                binding.tvHistory.text = it.size.toString()
+            }
 
-        newsViewModel.getHistory().observe(viewLifecycleOwner) {
-            binding.tvHistory.text = it.size.toString()
         }
 
         binding.tvUsername.text = preferenceManager.getPreferences()?.name ?: ""

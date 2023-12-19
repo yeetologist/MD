@@ -9,6 +9,7 @@ import com.dicoding.parentpal.data.local.database.bookmark.BookmarkEntity
 import com.dicoding.parentpal.databinding.ActivityHistoryBinding
 import com.dicoding.parentpal.ui.ViewModelFactory
 import com.dicoding.parentpal.ui.news.DetailNewsActivity
+import com.dicoding.parentpal.util.PreferenceManager
 
 class HistoryActivity : AppCompatActivity() {
 
@@ -22,10 +23,14 @@ class HistoryActivity : AppCompatActivity() {
         BookmarkAdapter(::onNewsClick)
     }
 
+    private lateinit var preferenceManager: PreferenceManager
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityHistoryBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        preferenceManager = PreferenceManager(this)
 
         binding.rvListHistory.layoutManager = LinearLayoutManager(this)
         getData()
@@ -40,8 +45,10 @@ class HistoryActivity : AppCompatActivity() {
     private fun getData() {
         val adapter = bookmarkAdapter
         binding.rvListHistory.adapter = adapter
-        bookmarkViewModel.getHistory().observe(this) {
-            adapter.submitList(it)
+        preferenceManager.getPreferences()?.let {pref ->
+            bookmarkViewModel.getHistory(pref.email).observe(this) {
+                adapter.submitList(it)
+            }
         }
     }
 }

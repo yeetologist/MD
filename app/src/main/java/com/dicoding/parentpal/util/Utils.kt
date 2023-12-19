@@ -22,7 +22,7 @@ fun getOneMonthBeforeCurrentTime(): String {
     return oneMonthBefore.format(formatter)
 }
 
-fun ArticlesItem.toBookmarkEntity(): BookmarkEntity {
+fun ArticlesItem.toBookmarkEntity(email: String): BookmarkEntity {
     return BookmarkEntity(
         publishedAt = this.publishedAt,
         author = this.author,
@@ -30,7 +30,8 @@ fun ArticlesItem.toBookmarkEntity(): BookmarkEntity {
         description = this.description,
         title = this.title,
         url = this.url,
-        content = this.content
+        content = this.content,
+        email = email
     )
 }
 
