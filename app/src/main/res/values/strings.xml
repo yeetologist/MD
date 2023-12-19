@@ -1,38 +1,38 @@
 <resources>
     <string name="app_name">ParentPal</string>
     <string name="parentpal">Parentpal</string>
-    <string name="signin">Sign In</string>
-    <string name="signup">Sign Up</string>
-    <string name="title_welcome_page">Welcome</string>
+    <string name="signin">Masuk</string>
+    <string name="signup">Daftar</string>
+    <string name="title_welcome_page">Selamat Datang</string>
     <string name="title_welcome_page1">ParentPal</string>
     <string name="email">Email</string>
     <string name="email2">user@gmail.com</string>
-    <string name="password">Password</string>
-    <string name="passwordConfirmation">Password Confirmation</string>
-    <string name="inputEmail">masukkan email Anda</string>
-    <string name="inputPassword">masukkan password Anda</string>
+    <string name="password">Kata Sandi</string>
+    <string name="passwordConfirmation">Konfirmasi Kata Sandi</string>
+    <string name="inputEmail">Masukkan email Anda</string>
+    <string name="inputPassword">Masukkan kata sandi Anda</string>
     <string name="username">Username</string>
-    <string name="inputUsername">masukkan username Anda</string>
-    <string name="kalkulatorGizi">KalkulatorGizi</string>
-    <string name="title_have_account">Have account?</string>
-    <string name="title_dont_have_account">Don\'t have account?</string>
-    <string name="hint_sign_up">Sign Up</string>
-    <string name="hint_log_in">Login</string>
-    <string name="hint_sign_in_with_google">Sign In With Google</string>
-    <string name="title_home">Home</string>
-    <string name="title_news">News</string>
-    <string name="title_profile">Profile</string>
-    <string name="title_calculator">Calculator</string>
+    <string name="inputUsername">Masukkan username Anda</string>
+    <string name="kalkulatorGizi">Kalkulator Gizi</string>
+    <string name="title_have_account">Sudah punya akun?</string>
+    <string name="title_dont_have_account">Belum punya akun?</string>
+    <string name="hint_sign_up">Daftar</string>
+    <string name="hint_log_in">Masuk</string>
+    <string name="hint_sign_in_with_google">Masuk dengan Google</string>
+    <string name="title_home">Beranda</string>
+    <string name="title_news">Berita</string>
+    <string name="title_profile">Profil</string>
+    <string name="title_calculator">Kalkulator</string>
     <string name="retry">Coba Lagi</string>
-    <string name="title_logout">Logout</string>
-    <string name="title_terms_and_condition">Terms and Condition</string>
-    <string name="title_setting_profile">Setting</string>
+    <string name="title_logout">Keluar</string>
+    <string name="title_terms_and_condition">Syarat dan Ketentuan</string>
+    <string name="title_setting_profile">Pengaturan</string>
     <string name="title_bookmark_profile">Bookmark</string>
-    <string name="title_history_profile">History</string>
+    <string name="title_history_profile">Riwayat</string>
     <string name="title_selamatdatang_home">Selamat Datang</string>
-    <string name="edit_image_description">Edit Image</string>
+    <string name="edit_image_description">Edit Gambar</string>
     <string name="zero">0</string>
-    <string name="btn_update">Save Changes</string>
+    <string name="btn_update">Simpan Perubahan</string>
     <string name="btn_imt_description">Hitung Indeks Masa Tubuh</string>
     <string name="btn_energy_description">Hitung Kebutuhan Energi</string>
     <string name="btn_bbi_description">Hitung Berat Badan Ideal</string>
@@ -54,17 +54,17 @@
     <string name="clear">Kosongkan</string>
     <string name="laki">Laki-Laki</string>
     <string name="perempuan">Perempuan</string>
-    <string name="login">Login</string>
-    <string name="favorite">favorite</string>
+    <string name="login">Masuk</string>
+    <string name="favorite">Favorit</string>
     <string name="rekomendasi">Rekomendasi:</string>
     <string name="header_normal">BAIK</string>
-    <string name="label_normal">Normal Weight (Berat Badan Normal):</string>
-    <string name="detail_normal">Selamat! Berat badan Anda normal. Tetap pertahankan gaya hidup sehat dengan pola makan seimbang dan aktifitas fisik teratur.</string>
-    <string name="header_underweight">UNDER WEIGHT</string>
-    <string name="label_underweight">Underweight (Kekurangan Berat Badan):</string>
+    <string name="label_normal">Berat Badan Normal:</string>
+    <string name="detail_normal">Selamat! Berat badan Anda normal. Tetap pertahankan gaya hidup sehat dengan pola makan seimbang dan aktivitas fisik teratur.</string>
+    <string name="header_underweight">KURANG BERAT</string>
+    <string name="label_underweight">Kurang Berat Badan:</string>
     <string name="detail_underweight">Berat badan Anda tergolong kurang. Pertahankan pola makan sehat dan konsultasikan dengan ahli gizi untuk meningkatkan berat badan dengan cara yang sehat.</string>
-    <string name="header_overweight">OVERWEIGHT</string>
-    <string name="label_overweight">Overweight (Kelebihan Berat Badan):</string>
+    <string name="header_overweight">KELEBIHAN BERAT</string>
+    <string name="label_overweight">Kelebihan Berat Badan:</string>
     <string name="detail_overweight">Anda memiliki kelebihan berat badan. Disarankan untuk berkonsultasi dengan profesional kesehatan untuk mengelola berat badan Anda.</string>
     <string name="header_stunting">STUNTING</string>
     <string name="label_stunting">Stunting (Pertumbuhan Terhambat):</string>
@@ -115,63 +115,50 @@
     </string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="title_activity_settings" translatable="false">SettingsActivity</string>
 
-    <!-- Preference Titles -->
-    <string name="messages_header">Messages</string>
-    <string name="sync_header">Sync</string>
-
-    <!-- Messages Preferences -->
-    <string name="signature_title">Your signature</string>
-    <string name="reply_title">Default reply action</string>
-
-    <!-- Sync Preferences -->
-    <string name="sync_title">Sync email periodically</string>
-    <string name="attachment_title">Download incoming attachments</string>
-    <string name="attachment_summary_on">Automatically download attachments for incoming emails
-    </string>
-    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="app_header">Aplikasi</string>
 
     <!-- Night Mode Preferences -->
-    <string name="pref_dark_title">Dark mode</string>
+    <string name="pref_dark_title">Mode gelap</string>
     <string name="pref_key_dark" translatable="false">key_dark_mode</string>
     <string name="pref_dark_follow_system" translatable="false">follow_system</string>
     <string name="pref_dark_on" translatable="false">on</string>
     <string name="pref_dark_off" translatable="false">off</string>
-    <string name="dark_mode_auto">Automatic</string>
-    <string name="dark_mode_on">Dark mode</string>
-    <string name="dark_mode_off">Light mode</string>
+    <string name="dark_mode_auto">Otomatis</string>
+    <string name="dark_mode_on">Mode Gelap</string>
+    <string name="dark_mode_off">Mode Terang</string>
 
     <!-- Activity Names -->
-    <string name="playing_tag">Playing Tag</string>
-    <string name="soccer">Soccer</string>
-    <string name="basketball">Basketball</string>
-    <string name="cycling">Cycling</string>
-    <string name="swimming">Swimming</string>
-    <string name="jumping_rope">Jumping Rope</string>
-    <string name="dancing">Dancing</string>
-    <string name="gymnastics">Gymnastics</string>
-    <string name="hiking">Hiking</string>
-    <string name="skateboarding">Skateboarding</string>
-    <string name="rollerblading">Rollerblading</string>
-    <string name="yoga_for_kids">Yoga for Kids</string>
-    <string name="obstacle_course">Obstacle Course</string>
-    <string name="hide_and_seek">Hide and Seek</string>
-    <string name="tennis">Tennis</string>
+    <string name="playing_tag">Bermain Tag</string>
+    <string name="soccer">Sepak Bola</string>
+    <string name="basketball">Bola Basket</string>
+    <string name="cycling">Bersepeda</string>
+    <string name="swimming">Renang</string>
+    <string name="jumping_rope">Loncat Tali</string>
+    <string name="dancing">Menari</string>
+    <string name="gymnastics">Senam</string>
+    <string name="hiking">Pendakian</string>
+    <string name="skateboarding">Seluncur Papan</string>
+    <string name="rollerblading">Patin</string>
+    <string name="yoga_for_kids">Yoga untuk Anak-anak</string>
+    <string name="obstacle_course">Lintasan Rintangan</string>
+    <string name="hide_and_seek">Bermain Petak Umpet</string>
+    <string name="tennis">Tenis</string>
     <string name="bowling">Bowling</string>
-    <string name="ice_skating">Ice Skating</string>
+    <string name="ice_skating">Seluncur Es</string>
     <string name="mini_golf">Mini Golf</string>
-    <string name="trampoline_fun">Trampoline Fun</string>
-    <string name="tree_climbing">Tree Climbing</string>
-    <string name="hopscotch">Hopscotch</string>
+    <string name="trampoline_fun">Bermain Trampoline</string>
+    <string name="tree_climbing">Memanjat Pohon</string>
+    <string name="hopscotch">Lompat Karet</string>
     <string name="frisbee">Frisbee</string>
     <string name="karate">Karate</string>
     <string name="judo">Judo</string>
-    <string name="biking">Biking</string>
-    <string name="rock_climbing">Rock Climbing</string>
+    <string name="biking">Bersepeda</string>
+    <string name="rock_climbing">Panjat Tebing</string>
     <string name="ziplining">Ziplining</string>
-    <string name="playground_activities">Playground Activities</string>
-    <string name="scooter_riding">Scooter Riding</string>
+    <string name="playground_activities">Aktivitas di Taman Bermain</string>
+    <string name="scooter_riding">Bersepeda Skuter</string>
 
 </resources>

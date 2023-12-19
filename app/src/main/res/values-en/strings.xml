@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ParentPal</string>
+    <string name="parentpal">Parentpal</string>
+    <string name="signin">Sign In</string>
+    <string name="signup">Sign Up</string>
+    <string name="title_welcome_page">Welcome</string>
+    <string name="title_welcome_page1">ParentPal</string>
+    <string name="email">Email</string>
+    <string name="email2">user@gmail.com</string>
+    <string name="password">Password</string>
+    <string name="passwordConfirmation">Password Confirmation</string>
+    <string name="inputEmail">Enter your email</string>
+    <string name="inputPassword">Enter your password</string>
+    <string name="username">Username</string>
+    <string name="inputUsername">Enter your username</string>
+    <string name="kalkulatorGizi">Nutrition Calculator</string>
+    <string name="title_have_account">Have an account?</string>
+    <string name="title_dont_have_account">Don\'t have an account?</string>
+    <string name="hint_sign_up">Sign Up</string>
+    <string name="hint_log_in">Log In</string>
+    <string name="hint_sign_in_with_google">Sign In With Google</string>
+    <string name="title_home">Home</string>
+    <string name="title_news">News</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_calculator">Calculator</string>
+    <string name="retry">Retry</string>
+    <string name="title_logout">Logout</string>
+    <string name="title_terms_and_condition">Terms and Conditions</string>
+    <string name="title_setting_profile">Settings</string>
+    <string name="title_bookmark_profile">Bookmark</string>
+    <string name="title_history_profile">History</string>
+    <string name="title_selamatdatang_home">Welcome</string>
+    <string name="edit_image_description">Edit Image</string>
+    <string name="zero">0</string>
+    <string name="btn_update">Save Changes</string>
+    <string name="btn_imt_description">Calculate Body Mass Index</string>
+    <string name="btn_energy_description">Calculate Energy Needs</string>
+    <string name="btn_bbi_description">Calculate Ideal Body Weight</string>
+    <string name="btn_summary_description">View Calculation Summary</string>
+    <string name="height_label">Height (cm) *</string>
+    <string name="weight_label">Weight (kg) *</string>
+    <string name="gender_label">Gender *</string>
+    <string name="age_label">Age (years) *</string>
+    <string name="activity_factor_label">Activity Factor</string>
+    <string name="hobby_checked">%s</string>
+    <string name="greater_sign">></string>
+    <string name="note_hint">Notes if any....</string>
+    <string name="height_hint">Cm</string>
+    <string name="weight_hint">Kg</string>
+    <string name="age_hint">Years</string>
+    <string name="activity_factor_hint">Activity Factor</string>
+    <string name="note_label">Additional Notes</string>
+    <string name="calculate">Calculate</string>
+    <string name="clear">Clear</string>
+    <string name="laki">Male</string>
+    <string name="perempuan">Female</string>
+    <string name="login">Login</string>
+    <string name="favorite">Favorite</string>
+    <string name="rekomendasi">Recommendation:</string>
+    <string name="header_normal">NORMAL</string>
+    <string name="label_normal">Normal Weight:</string>
+    <string name="detail_normal">Congratulations! Your weight is normal. Maintain a healthy lifestyle with a balanced diet and regular physical activity.</string>
+    <string name="header_underweight">UNDERWEIGHT</string>
+    <string name="label_underweight">Underweight:</string>
+    <string name="detail_underweight">Your weight is classified as underweight. Maintain a healthy diet and consult with a nutritionist to increase weight in a healthy way.</string>
+    <string name="header_overweight">OVERWEIGHT</string>
+    <string name="label_overweight">Overweight:</string>
+    <string name="detail_overweight">You have excess body weight. It is recommended to consult with a healthcare professional to manage your weight.</string>
+    <string name="header_stunting">STUNTING</string>
+    <string name="label_stunting">Stunting (Growth Impairment):</string>
+    <string name="detail_stunting">Stunting has occurred in your growth. It is important to seek advice from a doctor or nutritionist to ensure sufficient nutritional intake to support optimal growth.</string>
+
+    <string name="konsultasi_underweight">1. Consume nutrient-rich and high-calorie foods.\n
+        2. Choose healthy snacks between main meals.\n
+        3. Consult with a nutritionist to design a meal plan tailored to individual needs.\n
+        4. Add healthy protein sources such as lean meat, legumes, and dairy products.\n
+        5. Include healthy fat-rich foods such as avocados and nuts.\n
+        6. Eat more frequently in small portions to increase calorie intake.\n
+        7. Consume high-calorie and nutrient-rich foods like nuts, avocados, and whole grains.\n
+        8. Include high protein in every meal, such as lean meat, fish, and dairy products.\n
+        9. Consider consulting with a nutritionist to design a meal plan that meets your energy needs.\n
+        10. Drink enough water and avoid low-calorie beverages.
+    </string>
+
+    <string name="konsultasi_overweight">1. Reduce calorie intake by consuming healthy and balanced meals.\n
+        2. Increase physical activity, such as regular exercise.\n
+        3. Consult with a nutritionist or healthcare professional for an effective weight management plan.\n
+        4. Choose low-fat and high-fiber foods.\n
+        5. Reduce sugar and processed food consumption.\n
+        6. Establish a regular schedule for physical activities and incorporate cardiovascular exercise.\n
+        7. Avoid saturated fat and additional sugar in foods.\n
+        8. Focus on smaller and more frequent meal portions.\n
+        9. Consider incorporating more vegetables and fruits into your daily diet.\n
+        10. Engage in physical activities you enjoy, such as walking, cycling, or swimming.
+    </string>
+
+    <string name="konsultasi_gizibaik">1. Maintain a balanced diet by consuming a variety of foods.\n
+        2. Engage in regular physical activity, tailored to individual fitness levels.\n
+        3. Pay attention to sleep patterns and manage stress to maintain overall health.\n
+        4. Sustain a balanced diet by including various vegetables, fruits, proteins, and carbohydrates.\n
+        5. Stay active by participating in regular exercise or physical activities you enjoy.\n
+        6. Consider incorporating strength training in addition to cardiovascular activities.\n
+        7. Monitor weight regularly and adjust diet or physical activity as needed.
+    </string>
+
+    <string name="konsultasi_stunting">1. Ensure adequate nutritional intake, including protein, vitamins, and minerals.
+        2. Consult with a doctor or nutritionist for further evaluation and appropriate treatment plans.
+        3. Ensure the child receives a balanced nutritional intake from nutritious foods.
+        4. Pay special attention to nutrition during periods of rapid growth, such as infancy and early childhood.
+        5. Conduct regular health and growth check-ups for the child.
+        6. Teach healthy eating habits early on, emphasizing the importance of vegetables, fruits, and protein.
+        7. Regularly check the child\'s health and consult with a doctor or nutritionist as needed.
+        8. Support the child\'s mental and emotional health to ensure optimal growth.
+    </string>
+
+    <string name="app_header">Application</string>
+
+    <string name="pref_dark_title">Dark mode</string>
+
+    <string name="dark_mode_auto">Automatic</string>
+    <string name="dark_mode_on">Dark mode</string>
+    <string name="dark_mode_off">Light mode</string>
+
+    <!-- Activity Names -->
+    <string name="playing_tag">Playing Tag</string>
+    <string name="soccer">Soccer</string>
+    <string name="basketball">Basketball</string>
+    <string name="cycling">Cycling</string>
+    <string name="swimming">Swimming</string>
+    <string name="jumping_rope">Jumping Rope</string>
+    <string name="dancing">Dancing</string>
+    <string name="gymnastics">Gymnastics</string>
+    <string name="hiking">Hiking</string>
+    <string name="skateboarding">Skateboarding</string>
+    <string name="rollerblading">Rollerblading</string>
+    <string name="yoga_for_kids">Yoga for Kids</string>
+    <string name="obstacle_course">Obstacle Course</string>
+    <string name="hide_and_seek">Hide and Seek</string>
+    <string name="tennis">Tennis</string>
+    <string name="bowling">Bowling</string>
+    <string name="ice_skating">Ice Skating</string>
+    <string name="mini_golf">Mini Golf</string>
+    <string name="trampoline_fun">Trampoline Fun</string>
+    <string name="tree_climbing">Tree Climbing</string>
+    <string name="hopscotch">Hopscotch</string>
+    <string name="frisbee">Frisbee</string>
+    <string name="karate">Karate</string>
+    <string name="judo">Judo</string>
+    <string name="biking">Biking</string>
+    <string name="rock_climbing">Rock Climbing</string>
+    <string name="ziplining">Ziplining</string>
+    <string name="playground_activities">Playground Activities</string>
+    <string name="scooter_riding">Scooter Riding</string>
+</resources>
