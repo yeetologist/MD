@@ -13,6 +13,7 @@ import com.dicoding.parentpal.R
 import com.dicoding.parentpal.databinding.FragmentCalculatorBinding
 import com.dicoding.parentpal.ml.HealthStatPredict
 import com.dicoding.parentpal.ui.result.ResultActivity
+import com.dicoding.parentpal.util.showSnackbarShort
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.nio.ByteBuffer
@@ -20,6 +21,8 @@ import java.nio.ByteOrder
 
 class CalculatorFragment : Fragment() {
     private lateinit var binding: FragmentCalculatorBinding
+
+    private lateinit var hobbiesList: List<HobbyModel>
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -33,15 +36,29 @@ class CalculatorFragment : Fragment() {
         setupSpinner()
         setupActivityFactorDialog()
         binding.btnCalculate.setOnClickListener {
-            setupButton()
+            setupButtonCalculate()
+        }
+        binding.btnClear.setOnClickListener {
+            setupButtonClear()
         }
     }
 
-    private fun setupButton() {
-        val height = binding.edtHeight.text.toString().toFloat()
-        val weight = binding.edtWeight.text.toString().toFloat()
+    private fun setupButtonClear() {
+        binding.edtHeight.setText("")
+        binding.edtWeight.setText("")
+        binding.edtAge.setText("")
+        binding.etActivity.setText("")
+        binding.edtNote.setText("")
+        hobbiesList.forEach {
+            it.isChecked = false
+        }
+    }
+
+    private fun setupButtonCalculate() {
+        val height = binding.edtHeight.text.toString()
+        val weight = binding.edtWeight.text.toString()
         val gender = binding.spnGender.selectedItem.toString()
-        val age = binding.edtAge.text.toString().toFloat()
+        val age = binding.edtAge.text.toString()
 
         val sex = if (gender == "Perempuan") {
             0
@@ -49,9 +66,14 @@ class CalculatorFragment : Fragment() {
             1
         }
 
-        val floatArray1 = floatArrayOf(sex.toFloat(), age, height, weight)
+        if (height.isEmpty() || weight.isEmpty() || age.isEmpty()){
+            showSnackbarShort(getString(R.string.empty_message), binding.root)
+        }
+        else {
+            val floatArray1 = floatArrayOf(sex.toFloat(), age.toFloat(), height.toFloat(), weight.toFloat())
+            setupCalculate(floatArray1)
+        }
 
-        setupCalculate(floatArray1)
     }
 
     private fun setupCalculate(floatArray1: FloatArray) {
@@ -103,9 +125,7 @@ class CalculatorFragment : Fragment() {
 
     private fun setupActivityFactorDialog() {
 
-        val activitiesArray = resources.getStringArray(R.array.activities_array)
-
-        val hobbiesList = activitiesArray.map { activity ->
+        hobbiesList = resources.getStringArray(R.array.activities_array).map { activity ->
             HobbyModel(activity, false)
         }
 

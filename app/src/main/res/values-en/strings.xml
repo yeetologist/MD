@@ -54,6 +54,7 @@
     <string name="note_label">Additional Notes</string>
     <string name="calculate">Calculate</string>
     <string name="clear">Clear</string>
+    <string name="empty_message">There is Empty Data</string>
     <string name="laki">Male</string>
     <string name="perempuan">Female</string>
     <string name="login">Login</string>
