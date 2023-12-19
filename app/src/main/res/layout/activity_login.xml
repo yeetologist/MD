@@ -96,7 +96,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="68dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="80dp"
         android:fontFamily="@font/jacques_francois"
         android:text="@string/email"
         android:textAlignment="center"
@@ -207,33 +207,6 @@
         app:layout_constraintHorizontal_bias="0.714"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordEditTextLayout" />
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/btn_loginGoogle"
-        android:layout_width="269dp"
-        android:layout_height="60dp"
-        android:layout_marginHorizontal="35dp"
-        android:layout_marginTop="32dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:foreground="?android:attr/selectableItemBackgroundBorderless"
-        app:cardCornerRadius="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/view5"
-        app:layout_constraintTop_toTopOf="@+id/layout_signin">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:drawablePadding="10dp"
-            android:padding="16dp"
-            android:text="@string/hint_sign_in_with_google"
-            android:textSize="18sp"
-            app:drawableLeftCompat="@drawable/devicon_google" />
-
-    </androidx.cardview.widget.CardView>
 
     <View
         android:id="@+id/v_layer"
