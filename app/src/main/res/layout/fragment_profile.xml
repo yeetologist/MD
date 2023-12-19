@@ -19,39 +19,32 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/profile_image"
-        android:layout_width="104dp"
-        android:layout_height="104dp"
-        android:layout_marginTop="84dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/shape"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:src="@tools:sample/avatars" />
-
     <TextView
         android:id="@+id/tv_username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_black"
         android:text="@string/username"
-        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/shape"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/profile_image" />
+        app:layout_constraintTop_toTopOf="@+id/shape" />
 
 
     <TextView
         android:id="@+id/tv_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_medium"
         android:text="@string/email2"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+        app:layout_constraintTop_toBottomOf="@+id/shape" />
 
     <TextView
         android:id="@+id/btn_setting"
@@ -115,18 +108,6 @@
         android:text="@string/title_logout"
         app:drawableLeftCompat="@drawable/logout"
         app:layout_constraintTop_toBottomOf="@+id/btn_history"
-        tools:layout_editor_absoluteX="0dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/title_profile"
-        android:textColor="?attr/colorOnPrimary"
-        android:textSize="20sp"
-        app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp" />
 
     <androidx.cardview.widget.CardView

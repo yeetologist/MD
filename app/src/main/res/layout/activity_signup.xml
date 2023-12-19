@@ -20,7 +20,7 @@
 
     <View
         android:id="@+id/view2"
-        android:layout_width="333dp"
+        android:layout_width="353dp"
         android:layout_height="602dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
