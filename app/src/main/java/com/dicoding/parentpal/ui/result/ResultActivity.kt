@@ -1,5 +1,6 @@
 package com.dicoding.parentpal.ui.result
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.dicoding.parentpal.R
@@ -21,6 +22,7 @@ class ResultActivity : AppCompatActivity() {
         when (predResult) {
             0 -> {
                 binding.tvResultHeader.text = getString(R.string.header_normal)
+                binding.tvResultHeader.setTextColor(Color.GREEN)
                 binding.tvDetailResultLabel.text = getString(R.string.label_normal)
                 binding.tvDetailResult.text = getString(R.string.detail_normal)
                 binding.tvRecommendation.text = getString(R.string.konsultasi_gizibaik)
@@ -29,6 +31,7 @@ class ResultActivity : AppCompatActivity() {
 
             1 -> {
                 binding.tvResultHeader.text = getString(R.string.header_overweight)
+                binding.tvResultHeader.setTextColor(Color.RED)
                 binding.tvDetailResultLabel.text = getString(R.string.label_overweight)
                 binding.tvDetailResult.text = getString(R.string.detail_overweight)
                 binding.tvRecommendation.text = getString(R.string.konsultasi_overweight)
@@ -45,6 +48,7 @@ class ResultActivity : AppCompatActivity() {
 
             else -> {
                 binding.tvResultHeader.text = getString(R.string.header_stunting)
+                binding.tvResultHeader.setTextColor(Color.RED)
                 binding.tvDetailResultLabel.text = getString(R.string.label_underweight)
                 binding.tvDetailResult.text = getString(R.string.detail_stunting)
                 binding.tvRecommendation.text = getString(R.string.konsultasi_stunting)

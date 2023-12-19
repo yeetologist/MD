@@ -19,7 +19,7 @@
             android:fontFamily="@font/poppins_black"
             android:text="@string/header_normal"
             android:textAlignment="center"
-            android:textColor="@color/green"
+            android:textColor="@color/orange"
             android:textSize="48sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
