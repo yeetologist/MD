@@ -45,7 +45,7 @@ class HistoryActivity : AppCompatActivity() {
     private fun getData() {
         val adapter = bookmarkAdapter
         binding.rvListHistory.adapter = adapter
-        preferenceManager.getPreferences()?.let {pref ->
+        preferenceManager.getPreferences()?.let { pref ->
             bookmarkViewModel.getHistory(pref.email).observe(this) {
                 adapter.submitList(it)
             }

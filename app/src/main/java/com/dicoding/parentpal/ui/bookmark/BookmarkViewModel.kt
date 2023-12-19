@@ -10,7 +10,9 @@ class BookmarkViewModel(
     private val bookmarkRepository: BookmarkRepository,
     private val historyRepository: HistoryRepository
 ) : ViewModel() {
-    fun getAllBookmarks(email: String): LiveData<List<BookmarkEntity>> = bookmarkRepository.getAllBookmark(email)
+    fun getAllBookmarks(email: String): LiveData<List<BookmarkEntity>> =
+        bookmarkRepository.getAllBookmark(email)
+
     fun getHistory(email: String): LiveData<List<BookmarkEntity>> =
         historyRepository.getAllBookmarksSortedByTime(email)
 }

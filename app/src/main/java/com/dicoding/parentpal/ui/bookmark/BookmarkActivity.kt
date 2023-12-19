@@ -46,7 +46,7 @@ class BookmarkActivity : AppCompatActivity() {
     private fun getData() {
         val adapter = bookmarkAdapter
         binding.rvListBookmark.adapter = adapter
-        preferenceManager.getPreferences()?.let {pref ->
+        preferenceManager.getPreferences()?.let { pref ->
             bookmarkViewModel.getAllBookmarks(pref.email).observe(this) {
                 adapter.submitList(it)
             }

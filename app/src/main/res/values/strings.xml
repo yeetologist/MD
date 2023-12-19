@@ -41,104 +41,77 @@
     <string name="weight_label">Berat Badan (kg) *</string>
     <string name="gender_label">Jenis Kelamin *</string>
     <string name="age_label">Usia (tahun) *</string>
-    <string name="activity_factor_label">Faktor Aktivitas *</string>
+    <string name="activity_factor_label">Faktor Aktivitas</string>
     <string name="hobby_checked">%s</string>
     <string name="note_hint">Catatan bila ada....</string>
+    <string name="height_hint">Cm</string>
+    <string name="weight_hint">Kg</string>
+    <string name="age_hint">Tahun</string>
+    <string name="activity_factor_hint">Faktor Aktivitas</string>
+    <string name="note_label">Catatan Tambahan</string>
     <string name="calculate">Hitung</string>
     <string name="clear">Kosongkan</string>
     <string name="laki">Laki-Laki</string>
     <string name="perempuan">Perempuan</string>
     <string name="login">Login</string>
     <string name="favorite">favorite</string>
-    <string name="rekomendasi">Rekomendasi</string>
-
+    <string name="rekomendasi">Rekomendasi:</string>
+    <string name="header_normal">BAIK</string>
+    <string name="label_normal">Normal Weight (Berat Badan Normal):</string>
+    <string name="detail_normal">Selamat! Berat badan Anda normal. Tetap pertahankan gaya hidup sehat dengan pola makan seimbang dan aktifitas fisik teratur.</string>
+    <string name="header_underweight">UNDER WEIGHT</string>
+    <string name="label_underweight">Underweight (Kekurangan Berat Badan):</string>
+    <string name="detail_underweight">Berat badan Anda tergolong kurang. Pertahankan pola makan sehat dan konsultasikan dengan ahli gizi untuk meningkatkan berat badan dengan cara yang sehat.</string>
+    <string name="header_overweight">OVERWEIGHT</string>
+    <string name="label_overweight">Overweight (Kelebihan Berat Badan):</string>
+    <string name="detail_overweight">Anda memiliki kelebihan berat badan. Disarankan untuk berkonsultasi dengan profesional kesehatan untuk mengelola berat badan Anda.</string>
+    <string name="header_stunting">STUNTING</string>
+    <string name="label_stunting">Stunting (Pertumbuhan Terhambat):</string>
+    <string name="detail_stunting">Terjadi stunting pada pertumbuhan Anda. Penting untuk mencari saran dari dokter atau ahli gizi untuk memastikan asupan gizi yang cukup demi mendukung pertumbuhan optimal.</string>
 
     <!-- Caption -->
-    <string name="konsultasi_underweight">1. Konsultasikan dengan Dokter atau Ahli Gizi:\n
-        Sebelum melakukan perubahan signifikan dalam\n
-        pola makan anak, penting untuk berkonsultasi\n
-        dengan dokter atau ahli gizi. Mereka dapat\n
-        menentukan apakah ada masalah kesehatan yang\n
-        mendasar atau apakah kondisi tersebutkarena\n
-        faktor genetik atau pola makan yang tidak tepat.\n
-        \n
-        2. Peningkatan Asupan Kalori:\n
-        Pastikan anak mendapatkan cukup kalori dari\n
-        makanan sehari-hari. Pilih makanan yang kaya\n
-        nutrisi dan tinggi kalori seperti kacang-kacangan,\n
-        biji-bijian, daging,ikan, produk susu, dan buah-buahan.\n
-        \n
-        3. Pilih Makanan Nutrisi Tinggi:\n
-        Pilih makanan yang kaya akan nutrisi,\n
-        termasuk protein, lemak sehat,\n
-        karbohidrat kompleks, serat, vitamin</string>
+    <string name="konsultasi_underweight">1. Konsumsi makanan kaya nutrisi dan tinggi kalori.\n
+        2. Pilih camilan sehat di antara waktu makan utama.\n
+        3. Konsultasikan dengan ahli gizi untuk merancang rencana makan yang sesuai dengan kebutuhan individu.\n
+        4. Tambahkan sumber protein sehat seperti daging tanpa lemak, kacang-kacangan, dan produk susu.\n
+        5. Sertakan makanan tinggi lemak sehat seperti alpukat dan kacang-kacangan.\n
+        6. Makan lebih sering dalam porsi kecil untuk meningkatkan asupan kalori.\n
+        7. Konsumsi makanan tinggi kalori dan nutrisi seperti kacang-kacangan, alpukat, dan biji-bijian.\n
+        8. Sertakan protein tinggi dalam setiap makanan, seperti daging tanpa lemak, ikan, dan produk susu.\n
+        9. Pertimbangkan untuk berkonsultasi dengan ahli gizi untuk merancang rencana makan yang sesuai dengan kebutuhan energi Anda.\n
+        10. Minum cukup air dan hindari minuman berkalori rendah.
+    </string>
 
-    <string name="konsultasi_overweight">1.Konsultasikan dengan Dokter atau Ahli Gizi:\n
-    sebelum melakukan perubahan signifikan\n
-    pada pola makan atau aktivitas fisik,\n
-    penting untuk berkonsultasi dengan\n
-    dokter atau ahli gizi untuk mendapatkan\n
-    nasihat yang sesuai dengan\n
-    kondisi kesehatan individu.\n
-        \n
-    2. Pola Makan Sehat:
-    Makanan Seimbang: Konsumsi makanan\n
-    yang seimbang dari semua kelompok\n
-    makanan termasuk sayuran, buah-buahan,\n
-    biji-bijian, protein tanpa lemak,\n
-    dan produk susu rendah lemak.\n
-        \n
-    3. Aktivitas Fisik:\n
-    Olahraga Teratur: Mulailah dengan\n
-    rutinitas olahraga ringan dan secara\n
-    perlahan tingkatkan intensitasnya.\n
-    Berjalan kaki, bersepeda, atau\n
-    berenang bisa menjadi pilihan.</string>
+    <string name="konsultasi_overweight">1. Kurangi asupan kalori dengan mengonsumsi makanan sehat dan seimbang.\n
+        2. Tingkatkan aktivitas fisik, seperti olahraga teratur.\n
+        3. Konsultasikan dengan ahli gizi atau profesional kesehatan untuk rencana manajemen berat badan yang efektif.\n
+        4. Pilih makanan yang rendah lemak dan tinggi serat.\n
+        5. Kurangi konsumsi gula dan makanan olahan.\n
+        6. Buat jadwal rutin untuk aktivitas fisik dan tambahkan latihan kardiovaskular.\n
+        7. Hindari makanan tinggi lemak jenuh dan gula tambahan.\n
+        8. Fokus pada porsi makan yang lebih kecil dan lebih sering.\n
+        9. Pertimbangkan untuk memasukkan lebih banyak sayuran dan buah-buahan dalam diet harian.\n
+        10. Libatkan diri dalam aktivitas fisik yang Anda nikmati, seperti berjalan kaki, bersepeda, atau berenang.
+    </string>
 
-    <string name="konsultasi_gizibaik">1.Konsumsi Makanan Sehat:\n
-    Sayuran dan Buah-buahan: Pastikan\n
-    untuk mengonsumsi berbagai jenis\n
-    sayuran dan buah-buahan, karena\n
-    mereka kaya akan serat, vitamin,\n
-    dan antioksidan yang baik\n
-    untuk kesehatan tubuh.\n
-        \n
-    2. Kontrol Porsi Makanan:\n
-    Ukuran Porsi: Perhatikan ukuran\n
-    porsi makanan Anda untuk\n
-    menghindari konsumsi berlebihan.\n
-    Frekuensi Makan: Cobalah untuk\n
-    makan dalam porsi kecil namun\n
-    sering, ini dapat membantu\n
-    menjaga kadar gula darah dan\n
-    metabolisme tetap stabil.\n
-        \n
-    3. Minuman yang Sehat:\n
-    Air Putih: Minumlah air putih\n
-    yang cukup sepanjang hari.\n
-    Air sangat penting untuk menjaga\n
-    hidrasi dan keseimbangan tubuh.\n
-    Batas Konsumsi Minuman Bersoda dan Gula:\n
-    Batasi konsumsi minuman bersoda\n
-    dan minuman yang mengandung\n
-    gula tambahan.</string>
+    <string name="konsultasi_gizibaik">1. Pertahankan pola makan seimbang dengan mengonsumsi berbagai jenis makanan.\n
+        2. Lakukan aktivitas fisik teratur, sesuai dengan tingkat kebugaran individu.\n
+        3. Perhatikan pola tidur dan atasi stres untuk menjaga kesehatan secara keseluruhan.\n
+        4. Pertahankan pola makan seimbang dengan memasukkan berbagai jenis sayuran, buah-buahan, protein, dan karbohidrat.\n
+        5. Tetap aktif dengan melakukan olahraga teratur atau kegiatan fisik yang Anda nikmati.\n
+        6. Pertimbangkan untuk melakukan latihan kekuatan (strength training) selain aktivitas kardiovaskular.\n
+        7. Pantau berat badan secara teratur dan sesuaikan pola makan atau aktivitas fisik jika diperlukan.
+    </string>
 
-    <string name="konsultasi_stunting">1. Gizi yang Baik :\n
-    Asupan Nutrisi yang Seimbang: Pastikan anak\n
-    mendapatkan makanan yang kaya akan nutrisi,\n
-    termasuk protein, zat besi, kalsium, vitamin,\n
-    dan mineral lainnya.\n
-        \n
-    2. Perawatan Kesehatan:\n
-    Pantau Pertumbuhan: Penting untuk memantau pertumbuhan\n
-    anak secara teratur untuk mengidentifikasi jika ada\n
-    masalah pertumbuhan.\n
-        \n
-    3. Faktor Lingkungan dan Sosial:\n
-    Pendidikan Gizi bagi Orang Tua: Memberikan edukasi\n
-    kepada orang tua atau pengasuh tentang pentingnya\n
-    gizi yang baik dan cara memberikan makanan\n
-    yang sehat kepada anak-anak.</string>
+    <string name="konsultasi_stunting">1. Pastikan asupan gizi yang cukup, termasuk protein, vitamin, dan mineral.
+        2. Konsultasikan dengan dokter atau ahli gizi untuk evaluasi lebih lanjut dan rencana perawatan yang tepat.
+        3. Pastikan anak mendapatkan asupan gizi yang seimbang dari makanan bergizi.
+        4. Berikan perhatian khusus pada nutrisi selama masa pertumbuhan pesat, seperti dalam masa bayi dan balita.
+        5. Lakukan pemeriksaan kesehatan rutin dan pertumbuhan anak secara berkala.
+        6. Ajarkan kebiasaan makan sehat sejak dini, termasuk kepentingan sayuran, buah-buahan, dan protein.
+        7. Rutin periksa kesehatan anak dan konsultasikan dengan dokter atau ahli gizi jika diperlukan.
+        8. Dukung kesehatan mental dan emosional anak untuk memastikan pertumbuhan yang optimal.
+    </string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -168,5 +141,36 @@
     <string name="dark_mode_auto">Automatic</string>
     <string name="dark_mode_on">Dark mode</string>
     <string name="dark_mode_off">Light mode</string>
+
+    <!-- Activity Names -->
+    <string name="playing_tag">Playing Tag</string>
+    <string name="soccer">Soccer</string>
+    <string name="basketball">Basketball</string>
+    <string name="cycling">Cycling</string>
+    <string name="swimming">Swimming</string>
+    <string name="jumping_rope">Jumping Rope</string>
+    <string name="dancing">Dancing</string>
+    <string name="gymnastics">Gymnastics</string>
+    <string name="hiking">Hiking</string>
+    <string name="skateboarding">Skateboarding</string>
+    <string name="rollerblading">Rollerblading</string>
+    <string name="yoga_for_kids">Yoga for Kids</string>
+    <string name="obstacle_course">Obstacle Course</string>
+    <string name="hide_and_seek">Hide and Seek</string>
+    <string name="tennis">Tennis</string>
+    <string name="bowling">Bowling</string>
+    <string name="ice_skating">Ice Skating</string>
+    <string name="mini_golf">Mini Golf</string>
+    <string name="trampoline_fun">Trampoline Fun</string>
+    <string name="tree_climbing">Tree Climbing</string>
+    <string name="hopscotch">Hopscotch</string>
+    <string name="frisbee">Frisbee</string>
+    <string name="karate">Karate</string>
+    <string name="judo">Judo</string>
+    <string name="biking">Biking</string>
+    <string name="rock_climbing">Rock Climbing</string>
+    <string name="ziplining">Ziplining</string>
+    <string name="playground_activities">Playground Activities</string>
+    <string name="scooter_riding">Scooter Riding</string>
 
 </resources>

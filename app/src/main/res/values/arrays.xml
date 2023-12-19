@@ -25,4 +25,38 @@
         <item>@string/pref_dark_on</item>
         <item>@string/pref_dark_off</item>
     </string-array>
+
+    <!-- String Array: Activities -->
+    <string-array name="activities_array">
+        <item>@string/playing_tag</item>
+        <item>@string/soccer</item>
+        <item>@string/basketball</item>
+        <item>@string/cycling</item>
+        <item>@string/swimming</item>
+        <item>@string/jumping_rope</item>
+        <item>@string/dancing</item>
+        <item>@string/gymnastics</item>
+        <item>@string/hiking</item>
+        <item>@string/skateboarding</item>
+        <item>@string/rollerblading</item>
+        <item>@string/yoga_for_kids</item>
+        <item>@string/obstacle_course</item>
+        <item>@string/hide_and_seek</item>
+        <item>@string/tennis</item>
+        <item>@string/bowling</item>
+        <item>@string/ice_skating</item>
+        <item>@string/mini_golf</item>
+        <item>@string/trampoline_fun</item>
+        <item>@string/tree_climbing</item>
+        <item>@string/hopscotch</item>
+        <item>@string/frisbee</item>
+        <item>@string/karate</item>
+        <item>@string/judo</item>
+        <item>@string/biking</item>
+        <item>@string/rock_climbing</item>
+        <item>@string/ziplining</item>
+        <item>@string/playground_activities</item>
+        <item>@string/scooter_riding</item>
+    </string-array>
+
 </resources>

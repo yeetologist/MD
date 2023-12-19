@@ -80,13 +80,14 @@ class DetailNewsActivity : AppCompatActivity() {
         if (article != null) {
             webView.loadUrl(article.url)
             preferenceManager.getPreferences()?.let {
-                newsViewModel.getBookmarkByUrl(article.url, it.email).observe(this@DetailNewsActivity) { entity ->
-                    isBookmarked = entity.isNotEmpty()
-                    if (entity.isNotEmpty()) binding.fabBookmark.imageTintList =
-                        ColorStateList.valueOf(Color.rgb(255, 50, 50))
-                    else binding.fabBookmark.imageTintList =
-                        ColorStateList.valueOf(Color.rgb(255, 255, 255))
-                }
+                newsViewModel.getBookmarkByUrl(article.url, it.email)
+                    .observe(this@DetailNewsActivity) { entity ->
+                        isBookmarked = entity.isNotEmpty()
+                        if (entity.isNotEmpty()) binding.fabBookmark.imageTintList =
+                            ColorStateList.valueOf(Color.rgb(255, 50, 50))
+                        else binding.fabBookmark.imageTintList =
+                            ColorStateList.valueOf(Color.rgb(255, 255, 255))
+                    }
             }
             setupFab(article)
             setupHistory(article)
