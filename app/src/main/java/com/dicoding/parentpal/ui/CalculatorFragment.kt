@@ -11,7 +11,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import com.dicoding.parentpal.R
 import com.dicoding.parentpal.databinding.FragmentCalculatorBinding
-import com.dicoding.parentpal.ml.Pp
+import com.dicoding.parentpal.ml.HealthStatPredict
 import com.dicoding.parentpal.ui.result.ResultActivity
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
@@ -69,7 +69,7 @@ class CalculatorFragment : Fragment() {
         inputFeature0.loadBuffer(byteBuffer)
 
         // Assuming you have your TensorFlow Lite model
-        val model = Pp.newInstance(requireContext())
+        val model = HealthStatPredict.newInstance(requireContext())
 
         // Run model inference
         val outputs = model.process(inputFeature0)
