@@ -7,12 +7,13 @@ import com.dicoding.parentpal.data.local.database.news.NewsDatabase
 import com.dicoding.parentpal.data.local.repository.BookmarkRepository
 import com.dicoding.parentpal.data.local.repository.HistoryRepository
 import com.dicoding.parentpal.data.local.repository.NewsRepository
+import com.dicoding.parentpal.data.remote.AuthRepository
 import com.dicoding.parentpal.data.remote.retrofit.ApiConfig
 
 object Injection {
     fun provideNewsRepository(context: Context): NewsRepository {
         val database = NewsDatabase.getDatabase(context)
-        val apiService = ApiConfig.getApiService()
+        val apiService = ApiConfig.getNewsApiService()
         return NewsRepository(database, apiService)
     }
 
@@ -24,6 +25,11 @@ object Injection {
     fun provideHistoryRepository(context: Context): HistoryRepository {
         val database = HistoryDatabase.getDatabase(context)
         return HistoryRepository(database)
+    }
+
+    fun provideAuthRepository(): AuthRepository {
+        val apiService = ApiConfig.getAuthApiService()
+        return AuthRepository(apiService)
     }
 
 }

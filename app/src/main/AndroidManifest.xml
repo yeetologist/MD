@@ -37,13 +37,13 @@
             android:name=".ui.MainActivity"
             android:exported="true" />
         <activity
-            android:name=".ui.SignupActivity"
+            android:name=".ui.auth.SignupActivity"
             android:exported="false" />
         <activity
             android:name=".ui.WelcomeActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.SigninActivity"
+            android:name=".ui.auth.LoginActivity"
             android:exported="false" />
         <activity
             android:name=".ui.SplashScreenActivity"

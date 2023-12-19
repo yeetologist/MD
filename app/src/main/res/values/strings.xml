@@ -8,13 +8,16 @@
     <string name="email">Email</string>
     <string name="email2">user@gmail.com</string>
     <string name="password">Password</string>
+    <string name="passwordConfirmation">Password Confirmation</string>
     <string name="inputEmail">masukkan email Anda</string>
     <string name="inputPassword">masukkan password Anda</string>
     <string name="username">Username</string>
     <string name="inputUsername">masukkan username Anda</string>
     <string name="kalkulatorGizi">KalkulatorGizi</string>
     <string name="title_have_account">Have account?</string>
+    <string name="title_dont_have_account">Don\'t have account?</string>
     <string name="hint_sign_up">Sign Up</string>
+    <string name="hint_log_in">Login</string>
     <string name="hint_sign_in_with_google">Sign In With Google</string>
     <string name="title_home">Home</string>
     <string name="title_news">News</string>
@@ -45,8 +48,10 @@
     <string name="clear">Kosongkan</string>
     <string name="laki">Laki-Laki</string>
     <string name="perempuan">Perempuan</string>
+    <string name="login">Login</string>
     <string name="favorite">favorite</string>
     <string name="rekomendasi">Rekomendasi</string>
+
 
     <!-- Caption -->
     <string name="konsultasi_underweight">1. Konsultasikan dengan Dokter atau Ahli Gizi:\n
@@ -135,7 +140,6 @@
     gizi yang baik dan cara memberikan makanan\n
     yang sehat kepada anak-anak.</string>
 
-
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_settings">SettingsActivity</string>
@@ -164,7 +168,5 @@
     <string name="dark_mode_auto">Automatic</string>
     <string name="dark_mode_on">Dark mode</string>
     <string name="dark_mode_off">Light mode</string>
-
-
 
 </resources>

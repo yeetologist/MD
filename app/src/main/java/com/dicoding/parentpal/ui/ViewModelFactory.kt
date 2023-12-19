@@ -4,6 +4,8 @@ import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.dicoding.parentpal.data.di.Injection
+import com.dicoding.parentpal.ui.auth.LoginViewModel
+import com.dicoding.parentpal.ui.auth.SignupViewModel
 import com.dicoding.parentpal.ui.bookmark.BookmarkViewModel
 import com.dicoding.parentpal.ui.news.NewsViewModel
 import com.dicoding.parentpal.ui.profile.ProfileViewModel
@@ -34,6 +36,13 @@ class ViewModelFactory(private val context: Context) : ViewModelProvider.Factory
                 ) as T
             }
 
+            modelClass.isAssignableFrom(LoginViewModel::class.java) -> {
+                LoginViewModel(Injection.provideAuthRepository()) as T
+            }
+
+            modelClass.isAssignableFrom(SignupViewModel::class.java) -> {
+                SignupViewModel(Injection.provideAuthRepository()) as T
+            }
 
             else -> throw IllegalArgumentException("Unknown ViewModel Class")
         }

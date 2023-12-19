@@ -22,10 +22,9 @@
             android:id="@+id/ivItemCalculate"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/calculate"
             android:layout_gravity="center"
-            />
+            android:scaleType="centerCrop"
+            android:src="@drawable/calculate" />
     </androidx.cardview.widget.CardView>
 
 
@@ -89,7 +88,6 @@
         app:layout_constraintBottom_toTopOf="@+id/tv_username"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

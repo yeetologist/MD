@@ -10,9 +10,11 @@ import androidx.fragment.app.viewModels
 import com.dicoding.parentpal.R
 import com.dicoding.parentpal.databinding.FragmentProfileBinding
 import com.dicoding.parentpal.ui.ViewModelFactory
+import com.dicoding.parentpal.ui.auth.LoginActivity
 import com.dicoding.parentpal.ui.bookmark.BookmarkActivity
 import com.dicoding.parentpal.ui.bookmark.HistoryActivity
 import com.dicoding.parentpal.ui.setting.SettingsActivity
+import com.dicoding.parentpal.util.PreferenceManager
 
 class ProfileFragment : Fragment(), View.OnClickListener {
 
@@ -22,6 +24,7 @@ class ProfileFragment : Fragment(), View.OnClickListener {
         ViewModelFactory(requireContext())
     }
 
+    private lateinit var preferenceManager: PreferenceManager
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,6 +36,8 @@ class ProfileFragment : Fragment(), View.OnClickListener {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        preferenceManager = PreferenceManager(requireContext())
 
         binding.apply {
             btnSetting.setOnClickListener(this@ProfileFragment)
@@ -50,6 +55,10 @@ class ProfileFragment : Fragment(), View.OnClickListener {
         newsViewModel.getHistory().observe(viewLifecycleOwner) {
             binding.tvHistory.text = it.size.toString()
         }
+
+        binding.tvUsername.text = preferenceManager.getPreferences()?.name ?: ""
+        binding.tvEmail.text = preferenceManager.getPreferences()?.email ?: ""
+
     }
 
     override fun onClick(v: View?) {
@@ -65,11 +74,12 @@ class ProfileFragment : Fragment(), View.OnClickListener {
             R.id.btn_history, R.id.tv_history -> {
                 startActivity(Intent(requireContext(), HistoryActivity::class.java))
             }
-//            R.id.btn_logout -> {
-//                viewModel.logout()
-//                startActivity(Intent(requireActivity(),LoginActivity::class.java))
-//                requireActivity().finish()
-//            }
+
+            R.id.btn_logout -> {
+                startActivity(Intent(requireActivity(), LoginActivity::class.java))
+                preferenceManager.clearPreferences()
+                requireActivity().finish()
+            }
         }
     }
 }

@@ -16,7 +16,12 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        buildConfigField("String", "BASE_URL", "\"https://newsapi.org/v2/\"")
+        buildConfigField("String", "BASE_NEWS_URL", "\"https://newsapi.org/v2/\"")
+        buildConfigField(
+            "String",
+            "BASE_AUTH_URL",
+            "\"https://parentpal-407307.et.r.appspot.com/\""
+        )
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -57,6 +62,7 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.5")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.5")
     implementation("androidx.preference:preference-ktx:1.2.1")
+    implementation("com.google.code.gson:gson:2.10")
 
     // Image
     implementation("com.github.bumptech.glide:glide:4.16.0")

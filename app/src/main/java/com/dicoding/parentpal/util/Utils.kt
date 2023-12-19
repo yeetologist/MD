@@ -1,9 +1,11 @@
 package com.dicoding.parentpal.util
 
+import android.view.View
 import android.widget.ImageView
 import com.bumptech.glide.Glide
 import com.dicoding.parentpal.data.local.database.bookmark.BookmarkEntity
 import com.dicoding.parentpal.data.remote.response.ArticlesItem
+import com.google.android.material.snackbar.Snackbar
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
@@ -42,4 +44,8 @@ fun BookmarkEntity.toArticlesItem(): ArticlesItem {
         url = this.url,
         content = this.content
     )
+}
+
+fun showSnackbarShort(message: String, view: View) {
+    Snackbar.make(view, message, Snackbar.LENGTH_SHORT).show()
 }
