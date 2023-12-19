@@ -105,14 +105,14 @@
         7. Monitor weight regularly and adjust diet or physical activity as needed.
     </string>
 
-    <string name="konsultasi_stunting">1. Ensure adequate nutritional intake, including protein, vitamins, and minerals.
-        2. Consult with a doctor or nutritionist for further evaluation and appropriate treatment plans.
-        3. Ensure the child receives a balanced nutritional intake from nutritious foods.
-        4. Pay special attention to nutrition during periods of rapid growth, such as infancy and early childhood.
-        5. Conduct regular health and growth check-ups for the child.
-        6. Teach healthy eating habits early on, emphasizing the importance of vegetables, fruits, and protein.
-        7. Regularly check the child\'s health and consult with a doctor or nutritionist as needed.
-        8. Support the child\'s mental and emotional health to ensure optimal growth.
+    <string name="konsultasi_stunting">1. Ensure adequate nutritional intake, including protein, vitamins, and minerals.\n
+        2. Consult with a doctor or nutritionist for further evaluation and appropriate treatment plans.\n
+        3. Ensure the child receives a balanced nutritional intake from nutritious foods.\n
+        4. Pay special attention to nutrition during periods of rapid growth, such as infancy and early childhood.\n
+        5. Conduct regular health and growth check-ups for the child.\n
+        6. Teach healthy eating habits early on, emphasizing the importance of vegetables, fruits, and protein.\n
+        7. Regularly check the child\'s health and consult with a doctor or nutritionist as needed.\n
+        8. Support the child\'s mental and emotional health to ensure optimal growth.\n
     </string>
 
     <string name="app_header">Application</string>
