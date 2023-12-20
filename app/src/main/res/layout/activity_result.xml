@@ -18,7 +18,7 @@
             android:id="@+id/topAppBar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:title="@string/title_history_profile" />
+            app:title="@string/result" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <ScrollView
