@@ -2,6 +2,7 @@ package com.dicoding.parentpal.ui.result
 
 import android.graphics.Color
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.dicoding.parentpal.R
 import com.dicoding.parentpal.databinding.ActivityResultBinding
@@ -15,6 +16,11 @@ class ResultActivity : AppCompatActivity() {
         binding = ActivityResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val predResult = intent.getIntExtra(EXTRA_RESULT, -1)
+
+        setSupportActionBar(binding.topAppBar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
+
         setupView(predResult)
     }
 
@@ -55,6 +61,14 @@ class ResultActivity : AppCompatActivity() {
                 binding.ivResult.setImageResource(R.drawable.stunting)
             }
         }
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home) {
+            finish()
+            return true
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     companion object {

@@ -66,11 +66,11 @@ class CalculatorFragment : Fragment() {
             1
         }
 
-        if (height.isEmpty() || weight.isEmpty() || age.isEmpty()){
+        if (height.isEmpty() || weight.isEmpty() || age.isEmpty()) {
             showSnackbarShort(getString(R.string.empty_message), binding.root)
-        }
-        else {
-            val floatArray1 = floatArrayOf(sex.toFloat(), age.toFloat(), height.toFloat(), weight.toFloat())
+        } else {
+            val floatArray1 =
+                floatArrayOf(sex.toFloat(), age.toFloat(), height.toFloat(), weight.toFloat())
             setupCalculate(floatArray1)
         }
 
