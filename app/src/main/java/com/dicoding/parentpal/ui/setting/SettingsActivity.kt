@@ -1,24 +1,32 @@
 package com.dicoding.parentpal.ui.setting
 
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.preference.ListPreference
 import androidx.preference.PreferenceFragmentCompat
 import com.dicoding.parentpal.R
+import com.dicoding.parentpal.databinding.SettingsActivityBinding
 
 class SettingsActivity : AppCompatActivity() {
 
+    private lateinit var binding: SettingsActivityBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.settings_activity)
+        binding = SettingsActivityBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         if (savedInstanceState == null) {
             supportFragmentManager
                 .beginTransaction()
                 .replace(R.id.settings, SettingsFragment())
                 .commit()
         }
+
+        setSupportActionBar(binding.topAppBar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
     }
 
     class SettingsFragment : PreferenceFragmentCompat() {
@@ -42,5 +50,13 @@ class SettingsActivity : AppCompatActivity() {
             requireActivity().recreate()
             return true
         }
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home) {
+            finish()
+            return true
+        }
+        return super.onOptionsItemSelected(item)
     }
 }

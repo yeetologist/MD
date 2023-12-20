@@ -75,10 +75,10 @@ class LoginActivity : AppCompatActivity() {
                     }
 
                     is Result.Success -> {
+                        showLoading(false)
                         it.data.forEach { item ->
                             if (item.email == email) {
                                 preferenceManager.savePreferences(item)
-                                showLoading(false)
                                 startActivity(Intent(this, MainActivity::class.java))
                             }
                         }

@@ -2,6 +2,7 @@ package com.dicoding.parentpal.ui.bookmark
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -33,6 +34,11 @@ class HistoryActivity : AppCompatActivity() {
         preferenceManager = PreferenceManager(this)
 
         binding.rvListHistory.layoutManager = LinearLayoutManager(this)
+
+        setSupportActionBar(binding.topAppBar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
+
         getData()
     }
 
@@ -50,5 +56,13 @@ class HistoryActivity : AppCompatActivity() {
                 adapter.submitList(it)
             }
         }
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home) {
+            finish()
+            return true
+        }
+        return super.onOptionsItemSelected(item)
     }
 }
