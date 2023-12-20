@@ -62,16 +62,16 @@
     <string name="rekomendasi">Rekomendasi:</string>
     <string name="header_normal">BAIK</string>
     <string name="label_normal">Berat Badan Normal:</string>
-    <string name="detail_normal">Selamat! Berat badan Anda normal. Tetap pertahankan gaya hidup sehat dengan pola makan seimbang dan aktivitas fisik teratur.</string>
+    <string name="detail_normal">Selamat! Berat badan anak anda normal. Tetap pertahankan gaya hidup sehat dengan pola makan seimbang dan aktivitas fisik teratur.</string>
     <string name="header_underweight">KURANG BERAT</string>
     <string name="label_underweight">Kurang Berat Badan:</string>
-    <string name="detail_underweight">Berat badan Anda tergolong kurang. Pertahankan pola makan sehat dan konsultasikan dengan ahli gizi untuk meningkatkan berat badan dengan cara yang sehat.</string>
+    <string name="detail_underweight">Berat badan anak anda tergolong kurang. Pertahankan pola makan sehat dan konsultasikan dengan ahli gizi untuk meningkatkan berat badan dengan cara yang sehat.</string>
     <string name="header_overweight">KELEBIHAN BERAT</string>
     <string name="label_overweight">Kelebihan Berat Badan:</string>
-    <string name="detail_overweight">Anda memiliki kelebihan berat badan. Disarankan untuk berkonsultasi dengan profesional kesehatan untuk mengelola berat badan Anda.</string>
+    <string name="detail_overweight">Anak anda memiliki kelebihan berat badan. Disarankan untuk berkonsultasi dengan profesional kesehatan untuk mengelola berat badan anak anda.</string>
     <string name="header_stunting">STUNTING</string>
     <string name="label_stunting">Stunting (Pertumbuhan Terhambat):</string>
-    <string name="detail_stunting">Terjadi stunting pada pertumbuhan Anda. Penting untuk mencari saran dari dokter atau ahli gizi untuk memastikan asupan gizi yang cukup demi mendukung pertumbuhan optimal.</string>
+    <string name="detail_stunting">Terjadi stunting pada pertumbuhan anak anda. Penting untuk mencari saran dari dokter atau ahli gizi untuk memastikan asupan gizi yang cukup demi mendukung pertumbuhan optimal.</string>
 
     <!-- Caption -->
     <string name="konsultasi_underweight">1. Konsumsi makanan kaya nutrisi dan tinggi kalori.\n
@@ -82,7 +82,7 @@
         6. Makan lebih sering dalam porsi kecil untuk meningkatkan asupan kalori.\n
         7. Konsumsi makanan tinggi kalori dan nutrisi seperti kacang-kacangan, alpukat, dan biji-bijian.\n
         8. Sertakan protein tinggi dalam setiap makanan, seperti daging tanpa lemak, ikan, dan produk susu.\n
-        9. Pertimbangkan untuk berkonsultasi dengan ahli gizi untuk merancang rencana makan yang sesuai dengan kebutuhan energi Anda.\n
+        9. Pertimbangkan untuk berkonsultasi dengan ahli gizi untuk merancang rencana makan yang sesuai dengan kebutuhan energi anak anda.\n
         10. Minum cukup air dan hindari minuman berkalori rendah.
     </string>
 
@@ -95,14 +95,14 @@
         7. Hindari makanan tinggi lemak jenuh dan gula tambahan.\n
         8. Fokus pada porsi makan yang lebih kecil dan lebih sering.\n
         9. Pertimbangkan untuk memasukkan lebih banyak sayuran dan buah-buahan dalam diet harian.\n
-        10. Libatkan diri dalam aktivitas fisik yang Anda nikmati, seperti berjalan kaki, bersepeda, atau berenang.
+        10. Libatkan diri dalam aktivitas fisik yang anak anda nikmati, seperti berjalan kaki, bersepeda, atau berenang.
     </string>
 
     <string name="konsultasi_gizibaik">1. Pertahankan pola makan seimbang dengan mengonsumsi berbagai jenis makanan.\n
         2. Lakukan aktivitas fisik teratur, sesuai dengan tingkat kebugaran individu.\n
         3. Perhatikan pola tidur dan atasi stres untuk menjaga kesehatan secara keseluruhan.\n
         4. Pertahankan pola makan seimbang dengan memasukkan berbagai jenis sayuran, buah-buahan, protein, dan karbohidrat.\n
-        5. Tetap aktif dengan melakukan olahraga teratur atau kegiatan fisik yang Anda nikmati.\n
+        5. Tetap aktif dengan melakukan olahraga teratur atau kegiatan fisik yang anak anda nikmati.\n
         6. Pertimbangkan untuk melakukan latihan kekuatan (strength training) selain aktivitas kardiovaskular.\n
         7. Pantau berat badan secara teratur dan sesuaikan pola makan atau aktivitas fisik jika diperlukan.
     </string>
