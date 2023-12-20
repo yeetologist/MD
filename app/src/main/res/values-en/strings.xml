@@ -64,16 +64,16 @@
     <string name="rekomendasi">Recommendation:</string>
     <string name="header_normal">NORMAL</string>
     <string name="label_normal">Normal Weight:</string>
-    <string name="detail_normal">Congratulations! Your weight is normal. Maintain a healthy lifestyle with a balanced diet and regular physical activity.</string>
+    <string name="detail_normal">Congratulations! Your child weight is normal. Maintain a healthy lifestyle with a balanced diet and regular physical activity.</string>
     <string name="header_underweight">UNDERWEIGHT</string>
     <string name="label_underweight">Underweight:</string>
-    <string name="detail_underweight">Your weight is classified as underweight. Maintain a healthy diet and consult with a nutritionist to increase weight in a healthy way.</string>
+    <string name="detail_underweight">Your child weight is classified as underweight. Maintain a healthy diet and consult with a nutritionist to increase weight in a healthy way.</string>
     <string name="header_overweight">OVERWEIGHT</string>
     <string name="label_overweight">Overweight:</string>
-    <string name="detail_overweight">You have excess body weight. It is recommended to consult with a healthcare professional to manage your weight.</string>
+    <string name="detail_overweight">You have excess body weight. It is recommended to consult with a healthcare professional to manage your child weight.</string>
     <string name="header_stunting">STUNTING</string>
     <string name="label_stunting">Stunting (Growth Impairment):</string>
-    <string name="detail_stunting">Stunting has occurred in your growth. It is important to seek advice from a doctor or nutritionist to ensure sufficient nutritional intake to support optimal growth.</string>
+    <string name="detail_stunting">Stunting has occurred in your child growth. It is important to seek advice from a doctor or nutritionist to ensure sufficient nutritional intake to support optimal growth.</string>
 
     <string name="konsultasi_underweight">1. Consume nutrient-rich and high-calorie foods.\n
         2. Choose healthy snacks between main meals.\n
@@ -83,7 +83,7 @@
         6. Eat more frequently in small portions to increase calorie intake.\n
         7. Consume high-calorie and nutrient-rich foods like nuts, avocados, and whole grains.\n
         8. Include high protein in every meal, such as lean meat, fish, and dairy products.\n
-        9. Consider consulting with a nutritionist to design a meal plan that meets your energy needs.\n
+        9. Consider consulting with a nutritionist to design a meal plan that meets your child energy needs.\n
         10. Drink enough water and avoid low-calorie beverages.
     </string>
 
@@ -95,7 +95,7 @@
         6. Establish a regular schedule for physical activities and incorporate cardiovascular exercise.\n
         7. Avoid saturated fat and additional sugar in foods.\n
         8. Focus on smaller and more frequent meal portions.\n
-        9. Consider incorporating more vegetables and fruits into your daily diet.\n
+        9. Consider incorporating more vegetables and fruits into your child daily diet.\n
         10. Engage in physical activities you enjoy, such as walking, cycling, or swimming.
     </string>
 

@@ -55,7 +55,7 @@ class ResultActivity : AppCompatActivity() {
             else -> {
                 binding.tvResultHeader.text = getString(R.string.header_stunting)
                 binding.tvResultHeader.setTextColor(Color.RED)
-                binding.tvDetailResultLabel.text = getString(R.string.label_underweight)
+                binding.tvDetailResultLabel.text = getString(R.string.label_stunting)
                 binding.tvDetailResult.text = getString(R.string.detail_stunting)
                 binding.tvRecommendation.text = getString(R.string.konsultasi_stunting)
                 binding.ivResult.setImageResource(R.drawable.stunting)
