@@ -80,6 +80,7 @@ class LoginActivity : AppCompatActivity() {
                             if (item.email == email) {
                                 preferenceManager.savePreferences(item)
                                 startActivity(Intent(this, MainActivity::class.java))
+                                finish()
                             }
                         }
                     }

@@ -20,6 +20,7 @@ class WelcomeActivity : AppCompatActivity() {
 
         if (preferenceManager.getPreferences() != null) {
             startActivity(Intent(this, MainActivity::class.java))
+            finish()
         }
 
         binding = ActivityWelcomeBinding.inflate(layoutInflater)

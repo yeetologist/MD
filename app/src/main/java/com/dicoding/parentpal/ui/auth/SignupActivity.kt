@@ -63,6 +63,7 @@ class SignupActivity : AppCompatActivity() {
     private fun processSignup(data: SignupPostResponse) {
         showSnackbarShort(data.msg, binding.root)
         startActivity(Intent(this, LoginActivity::class.java))
+        finish()
     }
 
     private fun showLoading(bool: Boolean) {
